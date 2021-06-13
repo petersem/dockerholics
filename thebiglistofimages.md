@@ -2,5 +2,6 @@
 Here, you will find a list of all the images we have tried out.
 
 ## Networking
-|--|---|---|
-|Name|Purpose|Link|
+|Name|Details|Link|
+|Nginx Proxy Manager |Simple reverse proxy, with GUI and letsencrypt integration|--|
+|--|--|--|
