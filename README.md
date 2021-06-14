@@ -10,14 +10,14 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Development](#Development)
 - [Docker](#Docker)
 - [Gaming](#Gaming)
-- Information Sharing
-- Link / Page Organisation
+- [Information Sharing](#Information-Sharing)
+- [Link Organisation](#Link-Organisation)
 - Media
   - Gathering
   - Playing
 - Monitoring and Management
 - Networking and Security
-- Photo and Video Management
+- Photo Management
 
 ## Business
 - something listed
@@ -54,6 +54,11 @@ hi there
 
 **[`^        back to top        ^`](#)**
 
+## Development
+- something listed
+
+**[`^        back to top        ^`](#)**
+
 ## Docker
 - something listed
 - something listed
@@ -70,6 +75,16 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Gaming
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Information Sharing
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Link Organisation
 - something listed
 
 **[`^        back to top        ^`](#)**
