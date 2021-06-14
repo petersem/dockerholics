@@ -59,7 +59,7 @@ hi there
 
 ## Development
 - <a href='https://hub.docker.com/r/linuxserver/code-server' target='_blank'>Jackett</a>
- is VS Code running on a remote server, accessible through the browser.
+ is VS Code running on a remote server, accessible through the browser. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
@@ -95,9 +95,9 @@ hi there
 - <a href='https://hub.docker.com/r/linuxserver/prowlarr' target='_blank'>Prowlarr</a>
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
 - <a href='https://hub.docker.com/r/linuxserver/qbittorrent' target='_blank'>QbitTorrent</a>
- aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.
+ aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. **(Recommended)**
 - <a href='https://hub.docker.com/r/linuxserver/sabnzbd' target='_blank'>Sabnzbd</a>
- makes Usenet as simple and streamlined as possible by automating everything we can.
+ makes Usenet as simple and streamlined as possible by automating everything we can. **(Recommended)**
  
 **[`^        back to top        ^`](#)**
 
@@ -119,19 +119,19 @@ hi there
 
 ## Media Players
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
- organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.
+ organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
 ## Media Management
 - [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
- is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them.
+ is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. **(Recommended)**
 - [Radarr](https://hub.docker.com/r/linuxserver/radarr)
- is a fork of Sonarr to work with movies à la Couchpotato.
+ is a fork of Sonarr to work with movies à la Couchpotato. **(Recommended)**
 - [Readarr](https://hub.docker.com/r/hotio/readarr)
- is an ebook (and maybe eventually magazine/audiobook) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them.
+ is an ebook (and maybe eventually magazine/audiobook) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them. **(Recommended)**
 - [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
- is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.
+ is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
