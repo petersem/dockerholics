@@ -16,7 +16,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Information Sharing](#Information-Sharing)
 - [Link Organisation](#Link-Organisation)
 - Media
-  - [Media Players](#Media-Players)
+  - [Media Servers](#Media-Servers)
   - [Media Management](#Media-Management)
   - [Media Utilities](#Media-Utilities)
 - [Monitoring and Management](#Monitoring-and-Management)
@@ -118,7 +118,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#)**
 
-## Media Players
+## Media Servers
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
  organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
 
