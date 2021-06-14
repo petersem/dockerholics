@@ -58,7 +58,7 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Development
-- <a href='https://hub.docker.com/r/linuxserver/code-server' target='_blank'>Jackett</a>
+- <a href='https://hub.docker.com/r/linuxserver/code-server' target='_blank'>Code-Server</a>
  is VS Code running on a remote server, accessible through the browser. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
@@ -136,12 +136,16 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Media Utilities
-- something listed
+- [AllTube](https://hub.docker.com/r/rudloff/alltube)
+ is a HTML GUI for youtube-dl
+- [Exportarr](https://hub.docker.com/r/petersem/exportarr)
+ allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 
 **[`^        back to top        ^`](#)**
 
 ## Monitoring and Management
-- something listed
+- [ChangeDetection](dgtlmoon/changedetection.io)
+ Know when web pages change! Stay ontop of new information!
 
 **[`^        back to top        ^`](#)**
 
