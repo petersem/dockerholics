@@ -89,11 +89,12 @@ hi there
 - <a href='https://hub.docker.com/r/linuxserver/nzbhydra2' target='_blank'>NzbHydra2</a>
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
 - <a href='https://hub.docker.com/r/linuxserver/prowlarr' target='_blank'>Prowlarr</a>
- is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps.
+ is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **Recommended**
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+
 **[`^        back to top        ^`](#)**
 
 ## E-books
