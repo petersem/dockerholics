@@ -14,8 +14,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Gaming](#Gaming)
 - [Information Sharing](#Information-Sharing)
 - [Link Organisation](#Link-Organisation)
-- [Media Players](#Media-Players)
-- [Media Utilities](#Media-Utilities)
+- Media
+  - [Media Players](#Media-Players)
+  - [Media Management](#Media-Management)
+  - [Media Utilities](#Media-Utilities)
 - [Monitoring and Management](#Monitoring-and-Management)
 - [Networking and Security](#Networking-and-Security)
 - [Photos](#Photos)
@@ -94,10 +96,7 @@ hi there
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
 - <a href='https://hub.docker.com/r/linuxserver/sabnzbd' target='_blank'>Sabnzbd</a>
  makes Usenet as simple and streamlined as possible by automating everything we can.
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
-- 
+ 
 **[`^        back to top        ^`](#)**
 
 ## E-books
@@ -117,7 +116,20 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Media Players
-- something listed
+- [Plex](https://hub.docker.com/r/linuxserver/plex)
+ organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.
+
+**[`^        back to top        ^`](#)**
+
+## Media Management
+- [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
+ is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them.
+- [Radarr](https://hub.docker.com/r/linuxserver/radarr)
+ is a fork of Sonarr to work with movies à la Couchpotato.
+- [Readarr](https://hub.docker.com/r/hotio/readarr)
+ is an ebook (and maybe eventually magazine/audiobook) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them.
+- [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
+ is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them.
 
 **[`^        back to top        ^`](#)**
 
