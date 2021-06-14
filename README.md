@@ -8,6 +8,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Content Creation](#Content-Creation)
 - [Databases](#Databases)
 - [Development](#Development)
+- [Document Management](#Document-Management)
 - [Docker](#Docker)
 - [Downloading and Searching](#Downloading-and-Searching)
 - [E-books](#E-books)
@@ -76,6 +77,12 @@ hi there
 - something listed
 - something listed
 - something listed
+
+**[`^        back to top        ^`](#)**
+
+## Document Managment
+- [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
+ is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents.
 
 **[`^        back to top        ^`](#)**
 
