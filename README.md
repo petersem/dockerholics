@@ -83,8 +83,7 @@ hi there
 ## Downloading and Searching
 > Always use a VPN or SSL connection
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
-
-Nzbget is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
+ Is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
 
 **[`^        back to top        ^`](#)**
 
