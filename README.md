@@ -9,17 +9,15 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Databases](#Databases)
 - [Development](#Development)
 - [Docker](#Docker)
-- [Downloading](#Downloading)
+- [Downloading and Searching](#Downloading-and-Searching)
 - [E-books](#E-books)
 - [Gaming](#Gaming)
 - [Information Sharing](#Information-Sharing)
 - [Link Organisation](#Link-Organisation)
 - [Media Players](#Media-Players)
-  - [Gathering](#Gathering)
-  - [Playing](Playing)
-- Monitoring and Management
-- Networking and Security
-- Photo Management
+- [Monitoring and Management](#Monitoring-and-Management)
+- [Networking and Security](#Networking-and-Management)
+- [Photos](#Photos)
 
 ## Business
 - something listed
@@ -62,6 +60,7 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Docker
+
 - something listed
 - something listed
 - something listed
@@ -81,8 +80,10 @@ hi there
 
 **[`^        back to top        ^`](#)**
 
-## Downloading
-- something listed
+## Downloading and Searching
+> Always use a VPN or SSL connection
+- [NzbGet](https://hub.docker.com/r/linuxserver/nzbget)
+Nzbget is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
 
 **[`^        back to top        ^`](#)**
 
@@ -102,6 +103,21 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Media Players
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Monitoring and Management
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Networking and Security
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Photos
 - something listed
 
 **[`^        back to top        ^`](#)**
