@@ -15,8 +15,9 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Information Sharing](#Information-Sharing)
 - [Link Organisation](#Link-Organisation)
 - [Media Players](#Media-Players)
+- [Media Utilities](#Media-Utilities)
 - [Monitoring and Management](#Monitoring-and-Management)
-- [Networking and Security](#Networking-and-Management)
+- [Networking and Security](#Networking-and-Security)
 - [Photos](#Photos)
 
 ## Business
@@ -55,7 +56,8 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Development
-- something listed
+- <a href='https://hub.docker.com/r/linuxserver/code-server' target='_blank'>Jackett</a>
+ is VS Code running on a remote server, accessible through the browser.
 
 **[`^        back to top        ^`](#)**
 
@@ -81,7 +83,7 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Downloading and Searching
-> Always use a VPN or SSL connection
+> Always use a VPN or SSL connection for dowload tools
 - <a href='https://hub.docker.com/r/linuxserver/jackett' target='_blank'>Jackett</a>
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
@@ -90,12 +92,12 @@ hi there
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
 - <a href='https://hub.docker.com/r/linuxserver/prowlarr' target='_blank'>Prowlarr</a>
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 - <a href='https://hub.docker.com/r/linuxserver/sabnzbd' target='_blank'>Sabnzbd</a>
  makes Usenet as simple and streamlined as possible by automating everything we can.
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
-
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- 
 **[`^        back to top        ^`](#)**
 
 ## E-books
@@ -114,6 +116,11 @@ hi there
 **[`^        back to top        ^`](#)**
 
 ## Media Players
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Media Utilities
 - something listed
 
 **[`^        back to top        ^`](#)**
