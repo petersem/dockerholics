@@ -88,12 +88,14 @@ hi there
 > Always use a VPN or SSL connection for dowload tools
 - <a href='https://hub.docker.com/r/linuxserver/jackett' target='_blank'>Jackett</a>
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a> **(Recommended)**
  is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
 - <a href='https://hub.docker.com/r/linuxserver/nzbhydra2' target='_blank'>NzbHydra2</a>
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
 - <a href='https://hub.docker.com/r/linuxserver/prowlarr' target='_blank'>Prowlarr</a>
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
+- <a href='https://hub.docker.com/r/linuxserver/qbittorrent' target='_blank'>QbitTorrent</a>
+ aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.
 - <a href='https://hub.docker.com/r/linuxserver/sabnzbd' target='_blank'>Sabnzbd</a>
  makes Usenet as simple and streamlined as possible by automating everything we can.
  
