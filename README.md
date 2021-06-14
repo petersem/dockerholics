@@ -4,7 +4,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Categories
 - [Business](#Business)
-- Collaboration and Synchronisation
+- [Collaboration and Synchronisation](#Collaboration-and-Synchronisation)
 - Content Creation
 - Databases
 - Development
@@ -13,8 +13,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - Information Sharing
 - Link / Page Organisation
 - Media
--- Gathering
--- Playing
+  - Gathering
+  - Playing
 - Monitoring and Management
 - Networking and Security
 - Photo and Video Management
