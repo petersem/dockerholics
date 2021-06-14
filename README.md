@@ -82,9 +82,16 @@ hi there
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection
+- <a href='https://hub.docker.com/r/linuxserver/jackett' target='_blank'>Jackett</a>
+ works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
 - <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
  Is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
-
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
 **[`^        back to top        ^`](#)**
 
 ## E-books
