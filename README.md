@@ -7,9 +7,9 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Collaboration and Synchronisation](#Collaboration-and-Synchronisation)
 - [Content Creation](#Content-Creation)
 - [Databases](#Databases)
-- Development
-- Docker
-- Gaming
+- [Development](#Development)
+- [Docker](#Docker)
+- [Gaming](#Gaming)
 - Information Sharing
 - Link / Page Organisation
 - Media
@@ -52,6 +52,15 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#)**
 
+## Docker
+- something listed
+
+**[`^        back to top        ^`](#)**
+
+## Gaming
+- something listed
+
+**[`^        back to top        ^`](#)**
 
 ## Contributing
 - Submit a pull request.
