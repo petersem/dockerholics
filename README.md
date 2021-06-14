@@ -80,14 +80,9 @@ hi there
 
 **[`^        back to top        ^`](#)**
 
-## Document Managment
+## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents.
-
-**[`^        back to top        ^`](#)**
-
-## Databases
-- something listed
 
 **[`^        back to top        ^`](#)**
 
