@@ -3,21 +3,21 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
-### [Business](#Business)
-### Collaboration and Synchronisation
-### Content Creation
-### Databases
-### Development
-Docker
-Gaming
-Information Sharing
-Link / Page Organisation
-Media
- - Gathering
- - Playing
-Monitoring and Management
-Networking and Security
-Photo and Video Management
+- [Business](#Business)
+- Collaboration and Synchronisation
+- Content Creation
+- Databases
+- Development
+- Docker
+- Gaming
+- Information Sharing
+- Link / Page Organisation
+- Media
+-- Gathering
+-- Playing
+- Monitoring and Management
+- Networking and Security
+- Photo and Video Management
 
 ## Business
 - something listed
