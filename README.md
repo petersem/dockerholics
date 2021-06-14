@@ -89,7 +89,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > Always use a VPN or SSL connection for dowload tools
 - <a href='https://hub.docker.com/r/linuxserver/jackett' target='_blank'>Jackett</a>
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a> **(Recommended)**
+- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
  is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
 - <a href='https://hub.docker.com/r/linuxserver/nzbhydra2' target='_blank'>NzbHydra2</a>
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
