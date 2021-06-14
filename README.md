@@ -147,6 +147,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Monitoring and Management
 - [ChangeDetection](dgtlmoon/changedetection.io)
  Know when web pages change! Stay ontop of new information!
+- [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
+ is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
 **[`^        back to top        ^`](#)**
 
