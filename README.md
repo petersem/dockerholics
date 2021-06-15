@@ -90,7 +90,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
- is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents.
+ is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
@@ -118,7 +118,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Information Sharing
 - [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
- is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant.
+ is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
@@ -163,6 +163,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Monitoring and Management
 - [ChangeDetection](dgtlmoon/changedetection.io)
  Know when web pages change! Stay ontop of new information!
+- [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
+ is a open source home automation that puts local control and privacy first. **(Recommended)**
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
@@ -171,8 +173,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Networking and Security
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
+- [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
+ is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy.
+- [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
+ is a non-caching web proxy, with advanced features.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
- Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
+ is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
