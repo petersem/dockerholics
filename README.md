@@ -25,7 +25,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Business
 [Monic](https://hub.docker.com/_/monica)
- – the Personal Relationship Manager.
+ – the Personal Relationship Manager. **(Recommended)**
 - something listed
 - something listed
 - something listed
@@ -35,7 +35,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Collaboration and Synchronisation
-- something listed
+- [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
+ is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES
 
 **[`^        back to top        ^`](#)**
 
@@ -43,7 +44,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
- is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
+ is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. **(Recommended)**
 - something listed
 - something listed
 - something listed
@@ -118,7 +119,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Link Organisation
 - [Homer](https://hub.docker.com/r/b4bz/homer)
- A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. 
+ A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. **(Recommended)**
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
@@ -148,7 +149,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Exportarr](https://hub.docker.com/r/petersem/exportarr)
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
- - Media display poster display for Plex, Sonarr, and Radarr
+ Media display poster display for Plex, Sonarr, and Radarr
 
 **[`^        back to top        ^`](#)**
 
@@ -161,12 +162,14 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Networking and Security
-- something listed
+- [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
+ Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
 ## Photos
-- something listed
+- [PiWigo](https://hub.docker.com/r/linuxserver/piwigo_
+ is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
