@@ -154,7 +154,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Ombi](https://hub.docker.com/r/linuxserver/ombi)
  allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
- Media poster display for Plex, Sonarr, and Radarr
+ is a media poster display for Plex, Sonarr, and Radarr
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
  will monitor your Plex Media Server `Recommended`
 - [Xteve](https://hub.docker.com/r/dnsforge/xteve)
