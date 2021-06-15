@@ -101,6 +101,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. `Recommended`
 - [QbitTorrent](https://hub.docker.com/r/linuxserver/qbittorrent)
  aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. `Recommended`
+- [RuTorrent](https://hub.docker.com/r/linuxserver/rutorrent)
+ is a popular rtorrent client with a webui for ease of use.
 - [Sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)
  makes Usenet as simple and streamlined as possible by automating everything we can. `Recommended`
  
@@ -131,6 +133,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free, self-hostable aggregator for rss feeds.
 - [TheLounge](https://hub.docker.com/r/linuxserver/thelounge)
  is a web IRC client that you host on your own server.
+- [NginX](https://hub.docker.com/_/nginx)
+ is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
  
@@ -187,6 +191,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a media poster display for Plex, Sonarr, and Radarr
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
  will monitor your Plex Media Server `Recommended`
+- [TDARR](https://hub.docker.com/r/haveagitgat/tdarr)
+ is a closed-source distributed transcoding system for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers and so on. `Recommended`
 - [Xteve](https://hub.docker.com/r/dnsforge/xteve)
  emulates a SiliconDust HDHomeRun OTA tuner, which allows it to expose IPTV style channels to software, which would not normally support it.
 
