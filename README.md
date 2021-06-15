@@ -68,7 +68,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. **(Recommended)**
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
- Low-code programming for event-driven applications
+ is a low-code programming for event-driven applications
 
 **[`^        back to top        ^`](#)**
 
@@ -106,7 +106,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## E-books
-- something listed
+- [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
+ is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
@@ -126,7 +127,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Media Servers
 - [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
- is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.
+ is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. **(Recommended)**
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
  organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
 
@@ -153,10 +154,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 - [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
+- [Ombi](https://hub.docker.com/r/linuxserver/ombi)
+ allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  Media display poster display for Plex, Sonarr, and Radarr
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
- will monitor your Plex Media Server
+ will monitor your Plex Media Server **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
@@ -174,7 +177,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
- is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy.
+ is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. **(Recommended)**
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
