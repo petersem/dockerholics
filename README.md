@@ -35,7 +35,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
  replaces proprietary sync and cloud services with something open, trustworthy and decentralized.
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Content Creation
 - [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
@@ -43,12 +43,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Databases
 - something listed
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Development
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
@@ -56,7 +56,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
  is a low-code programming for event-driven applications
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Docker
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
@@ -64,13 +64,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
  is a process for automating Docker container base image updates. 
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
@@ -87,7 +87,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)
  makes Usenet as simple and streamlined as possible by automating everything we can. **(Recommended)**
  
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## E-books
 - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
@@ -95,13 +95,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
  is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Information Sharing
 - [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
  is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Link Organisation
 - [Homer](https://hub.docker.com/r/b4bz/homer)
@@ -109,7 +109,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Servers
 - [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
@@ -117,7 +117,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
  organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Management
 - [LazyLibrarian](https://hub.docker.com/r/linuxserver/lazylibrarian)
@@ -131,7 +131,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
  is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Utilities
 - [AllTube](https://hub.docker.com/r/rudloff/alltube)
@@ -147,7 +147,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
  will monitor your Plex Media Server **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Monitoring and Management
 - [ChangeDetection](dgtlmoon/changedetection.io)
@@ -157,7 +157,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Networking and Security
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
@@ -171,17 +171,17 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
  is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Photos
 - [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. **(Recommended)**
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Contributing
 - Submit a pull request.
 - Add an issue with the details of what you want to add, and we will test it out, then add it in.
 - Send a message or tag a group expert on Dockerholics.
 
-**[`^        back to top        ^`](#Dockerholics-Applications-List)**
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
