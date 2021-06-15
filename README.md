@@ -63,8 +63,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Development
-- <a href='https://hub.docker.com/r/linuxserver/code-server' target='_blank'>Code-Server</a>
+- [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. **(Recommended)**
+- [Node-Red](https://hub.docker.com/r/nodered/node-red)
+ Low-code programming for event-driven applications
 
 **[`^        back to top        ^`](#)**
 
@@ -148,6 +150,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a HTML GUI for youtube-dl
 - [Exportarr](https://hub.docker.com/r/petersem/exportarr)
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
+- [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
+ Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  Media display poster display for Plex, Sonarr, and Radarr
 
