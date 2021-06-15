@@ -209,7 +209,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Monitorr](https://hub.docker.com/r/monitorr/monitorr)
  is a webfront to live display the status of any webapp or service.
 - [NetData](https://hub.docker.com/r/netdata/netdata)
- is distributed, real-time, performance and health monitoring for systems and applications.
+ is distributed, real-time, performance and health monitoring for systems and applications. `Recommended`
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
