@@ -24,8 +24,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Photos](#Photos)
 
 ## Business
-[Monica](https://hub.docker.com/_/monica)
- – the Personal Relationship Manager. **(Recommended)**
+- [Monica](https://hub.docker.com/_/monica)
+ is the Personal Relationship Manager. **(Recommended)**
 - something listed
 - something listed
 - something listed
@@ -73,15 +73,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Docker
-
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
+[Portainer](https://hub.docker.com/r/portainer/portainer-ce)
+ is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
 - something listed
 - something listed
 - something listed
