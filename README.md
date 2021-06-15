@@ -39,7 +39,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Content Creation
 - [BookStack](https://hub.docker.com/r/linuxserver/bookstack)
- is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
+ is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease. **(Recommended)**
 - [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
@@ -49,7 +49,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Databases
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
- is one of the most popular database servers. Made by the original developers of MySQL.
+ is one of the most popular database servers. Made by the original developers of MySQL. **(Recommended)**
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -63,11 +63,11 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Docker
 - [Autoheal](https://hub.docker.com/r/willfarrell/autoheal)
- monitors and restarts unhealthy docker containers.
+ monitors and restarts unhealthy docker containers. **(Recommended)**
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
- is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
+ is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. **(Recommended)**
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
- is a process for automating Docker container base image updates. 
+ is a process for automating Docker container base image updates. **(Recommended)**
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -126,7 +126,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Media Management
 - [Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
- is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
+ is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you. **(Recommended)**
 - [LazyLibrarian](https://hub.docker.com/r/linuxserver/lazylibrarian)
  is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.
 - [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
@@ -174,7 +174,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
  is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. **(Recommended)**
 - [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
- uses Docker to run Pi-Hole with an upstream Unbound resolver
+ uses Docker to run Pi-Hole with an upstream Unbound resolver **(Recommended)**
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
