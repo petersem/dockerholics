@@ -26,11 +26,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Business
 - [Monica](https://hub.docker.com/_/monica)
  is the Personal Relationship Manager. **(Recommended)**
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
 
 **[`^        back to top        ^`](#)**
 
@@ -47,15 +42,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. **(Recommended)**
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
-- something listed
 
 **[`^        back to top        ^`](#)**
 
@@ -75,8 +61,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Docker
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
-- something listed
-- something listed
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
  is a process for automating Docker container base image updates. 
 
@@ -108,6 +92,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## E-books
 - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. **(Recommended)**
+- [Calibre](https://hub.docker.com/r/linuxserver/calibre)
+ is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
 
 **[`^        back to top        ^`](#)**
 
@@ -178,6 +164,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
  is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. **(Recommended)**
+- [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
+ uses Docker to run Pi-Hole with an upstream Unbound resolver
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
