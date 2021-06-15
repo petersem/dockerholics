@@ -81,6 +81,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
+- [GAPS](https://hub.docker.com/r/housewrecker/gaps)
+ Search your movies and find missing movies from MovieDB collections.
 - [Jackett](https://hub.docker.com/r/linuxserver/jackett)
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
 - [NzbGet](https://hub.docker.com/r/linuxserver/nzbget)
@@ -153,6 +155,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Ombi](https://hub.docker.com/r/linuxserver/ombi)
  allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
+- [Overseerr](https://hub.docker.com/r/sctx/overseerr)
+ is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex! `Recommended`
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  is a media poster display for Plex, Sonarr, and Radarr
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
@@ -167,6 +171,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  Know when web pages change! Stay ontop of new information!
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
  is a open source home automation that puts local control and privacy first. `Recommended`
+- [NetData](https://hub.docker.com/r/netdata/netdata)
+ Netdata is distributed, real-time, performance and health monitoring for systems and applications.
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
@@ -175,6 +181,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Networking and Security
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
+- [Nginx Proxy Manager](https://hub.docker.com/r/jc21/nginx-proxy-manager)
+ enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt. `Recommended`
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
  is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. `Recommended`
 - [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
