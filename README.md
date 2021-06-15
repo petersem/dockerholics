@@ -38,6 +38,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Content Creation
+- [BookStack](https://hub.docker.com/r/linuxserver/bookstack)
+ is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.
 - [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
@@ -46,7 +48,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Databases
-- something listed
+- [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
+ is one of the most popular database servers. Made by the original developers of MySQL.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -140,6 +143,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Media Utilities
 - [AllTube](https://hub.docker.com/r/rudloff/alltube)
  is a HTML GUI for youtube-dl
+- [DizQueTV](https://hub.docker.com/r/vexorian/dizquetv)
+ allows you to create your own IPTV channels and spoof HDHR tuners from your media library.
 - [Exportarr](https://hub.docker.com/r/petersem/exportarr)
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 - [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
