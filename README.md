@@ -39,23 +39,23 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Content Creation
 - [BookStack](https://hub.docker.com/r/linuxserver/bookstack)
- is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease. **(Recommended)**
+ is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease. `Recommended`
 - [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
- is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. **(Recommended)**
+ is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Databases
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
- is one of the most popular database servers. Made by the original developers of MySQL. **(Recommended)**
+ is one of the most popular database servers. Made by the original developers of MySQL. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Development
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
- is VS Code running on a remote server, accessible through the browser. **(Recommended)**
+ is VS Code running on a remote server, accessible through the browser. `Recommended`
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
  is a low-code programming for event-driven applications
 
@@ -63,17 +63,17 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Docker
 - [Autoheal](https://hub.docker.com/r/willfarrell/autoheal)
- monitors and restarts unhealthy docker containers. **(Recommended)**
+ monitors and restarts unhealthy docker containers. `Recommended`
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
- is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. **(Recommended)**
+ is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. `Recommended`
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
- is a process for automating Docker container base image updates. **(Recommended)**
+ is a process for automating Docker container base image updates. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
- is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. **(Recommended)**
+ is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -86,11 +86,11 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [NzbHydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
 - [Prowlarr](https://hub.docker.com/r/linuxserver/prowlarr)
- is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
+ is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. `Recommended`
 - [QbitTorrent](https://hub.docker.com/r/linuxserver/qbittorrent)
- aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. **(Recommended)**
+ aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. `Recommended`
 - [Sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)
- makes Usenet as simple and streamlined as possible by automating everything we can. **(Recommended)**
+ makes Usenet as simple and streamlined as possible by automating everything we can. `Recommended`
  
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -98,19 +98,19 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
  is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
  - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
- is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. **(Recommended)**
+ is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Information Sharing
 - [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
- is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. **(Recommended)**
+ is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Link Organisation
 - [Homer](https://hub.docker.com/r/b4bz/homer)
- A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. **(Recommended)**
+ A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
@@ -118,25 +118,25 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Media Servers
 - [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
- is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. **(Recommended)**
+ is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. `Recommended`
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
- organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
+ organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Management
 - [Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
- is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you. **(Recommended)**
+ is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you. `Recommended`
 - [LazyLibrarian](https://hub.docker.com/r/linuxserver/lazylibrarian)
  is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.
 - [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
- is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. **(Recommended)**
+ is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. `Recommended`
 - [Radarr](https://hub.docker.com/r/linuxserver/radarr)
- is a fork of Sonarr to work with movies à la Couchpotato. **(Recommended)**
+ is a fork of Sonarr to work with movies à la Couchpotato. `Recommended`
 - [Readarr](https://hub.docker.com/r/hotio/readarr)
- is an ebook (and maybe eventually magazine/audiobook) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them. **(Recommended)**
+ is an ebook (and maybe eventually magazine/audiobook) collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them. `Recommended`
 - [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
- is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. **(Recommended)**
+ is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -154,7 +154,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  Media display poster display for Plex, Sonarr, and Radarr
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
- will monitor your Plex Media Server **(Recommended)**
+ will monitor your Plex Media Server `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -162,7 +162,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [ChangeDetection](dgtlmoon/changedetection.io)
  Know when web pages change! Stay ontop of new information!
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
- is a open source home automation that puts local control and privacy first. **(Recommended)**
+ is a open source home automation that puts local control and privacy first. `Recommended`
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
@@ -172,19 +172,19 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
- is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. **(Recommended)**
+ is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. `Recommended`
 - [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
- uses Docker to run Pi-Hole with an upstream Unbound resolver **(Recommended)**
+ uses Docker to run Pi-Hole with an upstream Unbound resolver `Recommended`
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
- is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
+ is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Photos
 - [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
- is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. **(Recommended)**
+ is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
