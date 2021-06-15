@@ -57,6 +57,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Databases
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
  is one of the most popular database servers. Made by the original developers of MySQL. `Recommended`
+- [MySQL](https://hub.docker.com/_/mysql)
+ is a widely used, open-source relational database management system (RDBMS).
 - [MySQL Workbench](https://hub.docker.com/r/linuxserver/mysql-workbench)
  is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, and backup.
 
