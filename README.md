@@ -172,7 +172,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
  is a open source home automation that puts local control and privacy first. `Recommended`
 - [NetData](https://hub.docker.com/r/netdata/netdata)
- Netdata is distributed, real-time, performance and health monitoring for systems and applications.
+ is distributed, real-time, performance and health monitoring for systems and applications.
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 
