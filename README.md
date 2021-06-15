@@ -73,11 +73,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Docker
-[Portainer](https://hub.docker.com/r/portainer/portainer-ce)
+- [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
 - something listed
 - something listed
-- something listed
+- [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
+ is a process for automating Docker container base image updates. 
 
 **[`^        back to top        ^`](#)**
 
@@ -124,12 +125,16 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Media Servers
+- [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
+ is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
  organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
 ## Media Management
+- [LazyLibrarian](https://hub.docker.com/r/linuxserver/lazylibrarian)
+ is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.
 - [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
  is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. **(Recommended)**
 - [Radarr](https://hub.docker.com/r/linuxserver/radarr)
@@ -150,6 +155,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  Media display poster display for Plex, Sonarr, and Radarr
+- [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
+ will monitor your Plex Media Server
 
 **[`^        back to top        ^`](#)**
 
