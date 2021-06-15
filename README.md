@@ -25,7 +25,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Business
 - [Monica](https://hub.docker.com/_/monica)
- is the Personal Relationship Manager. **(Recommended)**
+ is the Personal Relationship Manager. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
