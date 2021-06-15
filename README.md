@@ -24,6 +24,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Photos](#Photos)
 
 ## Business
+[Monic](https://hub.docker.com/_/monica)
+ – the Personal Relationship Manager.
 - something listed
 - something listed
 - something listed
@@ -38,7 +40,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Content Creation
-- [Draw.IO](https://hub.docker.com/r/fjudith/draw.io)
+- [Draw.io](https://hub.docker.com/r/fjudith/draw.io)
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
@@ -115,6 +117,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Link Organisation
+- [Homer](https://hub.docker.com/r/b4bz/homer)
+ A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. 
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
@@ -143,6 +147,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a HTML GUI for youtube-dl
 - [Exportarr](https://hub.docker.com/r/petersem/exportarr)
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
+- [Posterr](https://hub.docker.com/r/petersem/posterr)
+ - Media display poster display for Plex, Sonarr, and Radarr
 
 **[`^        back to top        ^`](#)**
 
