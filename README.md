@@ -36,7 +36,9 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Collaboration and Synchronisation
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
- is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES
+ is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
+- [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
+ replaces proprietary sync and cloud services with something open, trustworthy and decentralized.
 
 **[`^        back to top        ^`](#)**
 
@@ -167,13 +169,15 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Networking and Security
+- [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
+ is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
  Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
 
 ## Photos
-- [PiWigo](https://hub.docker.com/r/linuxserver/piwigo_
+- [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. **(Recommended)**
 
 **[`^        back to top        ^`](#)**
