@@ -92,10 +92,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## E-books
-- [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
- is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. **(Recommended)**
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
  is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
+ - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
+ is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. **(Recommended)**
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -122,6 +122,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Management
+- [Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
+ is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
 - [LazyLibrarian](https://hub.docker.com/r/linuxserver/lazylibrarian)
  is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.
 - [Lidarr](https://hub.docker.com/r/linuxserver/lidarr)
