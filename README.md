@@ -24,7 +24,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Photos](#Photos)
 
 ## Business
-[Monic](https://hub.docker.com/_/monica)
+[Monica](https://hub.docker.com/_/monica)
  – the Personal Relationship Manager. **(Recommended)**
 - something listed
 - something listed
@@ -115,7 +115,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#)**
 
 ## Information Sharing
-- something listed
+- [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
+ is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant.
 
 **[`^        back to top        ^`](#)**
 
