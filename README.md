@@ -34,6 +34,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a self-hosted Google Drive alternative. It is a full featured web based file manager with an easy to use user interface.
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
+- [NextCloud](https://hub.docker.com/_/nextcloud)
+ is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
  is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
@@ -48,8 +50,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. `Recommended`
-- [NextCloud](https://hub.docker.com/_/nextcloud)
- is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
