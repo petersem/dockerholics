@@ -30,6 +30,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Collaboration and Synchronisation
+- [FileRun](https://hub.docker.com/r/afian/filerun)
+ is a self-hosted Google Drive alternative. It is a full featured web based file manager with an easy to use user interface.
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
@@ -46,12 +48,16 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. `Recommended`
+- [NextCloud](https://hub.docker.com/_/nextcloud)
+ is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Databases
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
  is one of the most popular database servers. Made by the original developers of MySQL. `Recommended`
+- [MySQL Workbench](https://hub.docker.com/r/linuxserver/mysql-workbench)
+ is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, and backup.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -66,6 +72,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Docker
 - [Autoheal](https://hub.docker.com/r/willfarrell/autoheal)
  monitors and restarts unhealthy docker containers. `Recommended`
+- [Dozzle](https://hub.docker.com/r/amir20/dozzle)
+ is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only. `Recommended`
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. `Recommended`
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
@@ -106,15 +114,31 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
+## Gaming
+- [OpenRA](https://hub.docker.com/r/rmoriz/openra)
+ is a multi-player network client for the OpenRA game
+
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+
 ## Information Sharing
 - [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
  is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
+## Internet
+- [FreshRSS](https://hub.docker.com/r/linuxserver/freshrss)
+ is a free, self-hostable aggregator for rss feeds.
+- [TheLounge](https://hub.docker.com/r/linuxserver/thelounge)
+ is a web IRC client that you host on your own server.
+
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+ 
 ## Link Organisation
+- [DashMachine](https://hub.docker.com/r/rmountjoy/dashmachine)
+ is another web application bookmark dashboard, with fun features.
 - [Homer](https://hub.docker.com/r/b4bz/homer)
- A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
+ is a dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
@@ -151,6 +175,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  allows you to create your own IPTV channels and spoof HDHR tuners from your media library.
 - [Exportarr](https://hub.docker.com/r/petersem/exportarr)
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
+- [Handbrake](https://hub.docker.com/r/jlesage/handbrake)
+ is a Docker container for HandBrake.
 - [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Ombi](https://hub.docker.com/r/linuxserver/ombi)
@@ -171,6 +197,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  lets you know when web pages change! Stay ontop of new information!
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
  is a open source home automation that puts local control and privacy first. `Recommended`
+- [Monitorr](https://hub.docker.com/r/monitorr/monitorr)
+ is a webfront to live display the status of any webapp or service.
 - [NetData](https://hub.docker.com/r/netdata/netdata)
  is distributed, real-time, performance and health monitoring for systems and applications.
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
@@ -179,6 +207,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Networking and Security
+- [DuckDNS](https://hub.docker.com/r/linuxserver/duckdns)
+ is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.
+- [Filezilla](https://hub.docker.com/r/jlesage/filezilla)
+ is a cross-platform graphical FTP, SFTP, and FTPS file management tool with a vast list of features.
 - [LibreSpeed](https://hub.docker.com/r/linuxserver/librespeed)
  is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.
 - [Nginx Proxy Manager](https://hub.docker.com/r/jc21/nginx-proxy-manager)
@@ -195,6 +227,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Photos
+- [Chevereto](https://hub.docker.com/r/linuxserver/chevereto)
+ is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server.
+- [Lychee](https://hub.docker.com/r/lycheeorg/lychee)
+ is a great looking and easy-to-use photo-management-system.
+- [PhotoShow](https://hub.docker.com/r/linuxserver/photoshow)
+ is gallery software at its easiest, it doesn't even require a database.
 - [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 
