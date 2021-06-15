@@ -30,10 +30,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Collaboration and Synchronisation
-- [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
- is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
+- [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
+ is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
  replaces proprietary sync and cloud services with something open, trustworthy and decentralized.
 
