@@ -59,6 +59,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Docker
+- [Autoheal](https://hub.docker.com/r/willfarrell/autoheal)
+ monitors and restarts unhealthy docker containers.
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters.
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
