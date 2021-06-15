@@ -94,8 +94,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
-- [GAPS](https://hub.docker.com/r/housewrecker/gaps)
- Search your movies and find missing movies from MovieDB collections.
+- [Gaps](https://hub.docker.com/r/housewrecker/gaps)
+ Search your movies and find missing movies from MovieDB collections. `Recommended`
 - [Jackett](https://hub.docker.com/r/linuxserver/jackett)
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
 - [NzbGet](https://hub.docker.com/r/linuxserver/nzbget)
