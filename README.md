@@ -87,17 +87,17 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
-- <a href='https://hub.docker.com/r/linuxserver/jackett' target='_blank'>Jackett</a>
+- [Jackett](https://hub.docker.com/r/linuxserver/jackett)
  works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software.
-- <a href='https://hub.docker.com/r/linuxserver/nzbget' target='_blank'>NzbGet</a>
+- [NzbGet](https://hub.docker.com/r/linuxserver/nzbget)
  is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.
-- <a href='https://hub.docker.com/r/linuxserver/nzbhydra2' target='_blank'>NzbHydra2</a>
+- [NzbHydra2](https://hub.docker.com/r/linuxserver/nzbhydra2)
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
-- <a href='https://hub.docker.com/r/linuxserver/prowlarr' target='_blank'>Prowlarr</a>
+- [Prowlarr](https://hub.docker.com/r/linuxserver/prowlarr)
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. **(Recommended)**
-- <a href='https://hub.docker.com/r/linuxserver/qbittorrent' target='_blank'>QbitTorrent</a>
+- [QbitTorrent](https://hub.docker.com/r/linuxserver/qbittorrent)
  aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. **(Recommended)**
-- <a href='https://hub.docker.com/r/linuxserver/sabnzbd' target='_blank'>Sabnzbd</a>
+- [Sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)
  makes Usenet as simple and streamlined as possible by automating everything we can. **(Recommended)**
  
 **[`^        back to top        ^`](#)**
