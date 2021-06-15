@@ -205,7 +205,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Monitoring and Management
 - [ChangeDetection](dgtlmoon/changedetection.io)
- lets you know when web pages change! Stay ontop of new information!
+ lets you know when web pages change! Stay on top of new information!
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
  is a open source home automation that puts local control and privacy first. `Recommended`
 - [Monitorr](https://hub.docker.com/r/monitorr/monitorr)
