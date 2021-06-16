@@ -61,6 +61,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a widely used, open-source relational database management system (RDBMS).
 - [MySQL Workbench](https://hub.docker.com/r/linuxserver/mysql-workbench)
  is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, and backup.
+- [InfluxDB](https://hub.docker.com/_/influxdb)
+ is an open source time series database for recording metrics, events, and analytics. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -200,12 +202,16 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a closed-source distributed transcoding system for automating media library transcode/remux management and making sure your files are exactly how you need them to be in terms of codecs/streams/containers and so on. `Recommended`
 - [Xteve](https://hub.docker.com/r/dnsforge/xteve)
  emulates a SiliconDust HDHomeRun OTA tuner, which allows it to expose IPTV style channels to software, which would not normally support it.
+- [Varken](https://hub.docker.com/r/boerderij/varken)
+ is a standalone command-line utility to aggregate data from the Plex ecosystem into InfluxDB 
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Monitoring and Management
 - [ChangeDetection](dgtlmoon/changedetection.io)
  lets you know when web pages change! Stay on top of new information!
+- [Grafana](https://hub.docker.com/r/grafana/grafana)
+ Query, visualize, alert on, and understand your data no matter where it’s stored.
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
  is a open source home automation that puts local control and privacy first. `Recommended`
 - [Monitorr](https://hub.docker.com/r/monitorr/monitorr)
@@ -214,10 +220,14 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is distributed, real-time, performance and health monitoring for systems and applications. `Recommended`
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
+- [Telegraf](https://hub.docker.com/_/telegraf)
+ is an agent for collecting metrics and writing them to InfluxDB or other outputs.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Networking and Security
+- [Authelia](https://hub.docker.com/r/authelia/authelia)
+ is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. `Recommended`
 - [DuckDNS](https://hub.docker.com/r/linuxserver/duckdns)
  is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.
 - [Filezilla](https://hub.docker.com/r/jlesage/filezilla)
@@ -232,6 +242,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  uses Docker to run Pi-Hole with an upstream Unbound resolver `Recommended`
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
+- [Traefik](https://hub.docker.com/_/traefik)
+ is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
  is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. `Recommended`
 
