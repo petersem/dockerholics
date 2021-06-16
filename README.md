@@ -265,7 +265,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Contributing
 - Submit a pull request.
-- Add an issue with the details of what you want to add, and we will test it out, then add it in.
 - Send a message or tag a group expert on Dockerholics.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
