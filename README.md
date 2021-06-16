@@ -25,6 +25,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Photos](#Photos)
 
 ## Business
+- [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
+ is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams.
 - [Monica](https://hub.docker.com/_/monica)
  is the Personal Relationship Manager. `Recommended`
 
