@@ -65,7 +65,9 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, and backup.
 - [InfluxDB](https://hub.docker.com/_/influxdb)
  is an open source time series database for recording metrics, events, and analytics. `Recommended`
-
+- [PHPMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+ is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.
+ 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Development
