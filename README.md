@@ -162,6 +162,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Servers
+- [Emby](https://hub.docker.com/r/linuxserver/emby)
+ organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.
 - [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
  is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. `Recommended`
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
