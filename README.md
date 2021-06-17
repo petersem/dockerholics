@@ -23,6 +23,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Monitoring and Management](#Monitoring-and-Management)
 - [Networking and Security](#Networking-and-Security)
 - [Photos](#Photos)
+- [Security](#Security)
 
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
@@ -234,8 +235,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Networking and Security
-- [Authelia](https://hub.docker.com/r/authelia/authelia)
- is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. `Recommended`
 - [DuckDNS](https://hub.docker.com/r/linuxserver/duckdns)
  is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.
 - [Filezilla](https://hub.docker.com/r/jlesage/filezilla)
@@ -252,8 +251,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a non-caching web proxy, with advanced features.
 - [Traefik](https://hub.docker.com/_/traefik)
  is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
-- [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
- is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -267,6 +264,14 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+
+## Security
+- [Authelia](https://hub.docker.com/r/authelia/authelia)
+ is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. `Recommended`
+- [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
+ is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. `Recommended`
+ 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Contributing
