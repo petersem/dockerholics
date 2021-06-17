@@ -23,6 +23,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Monitoring and Management](#Monitoring-and-Management)
 - [Networking and Security](#Networking-and-Security)
 - [Photos](#Photos)
+- [Recipes)(#Recipes)
 - [Security](#Security)
 
 ## Business
@@ -266,6 +267,11 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
+## Recipe Management
+- [Mealie](https://hub.docker.com/r/hkotel/mealie)
+ is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor. `Recommended`
+ 
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
 ## Security
 - [Authelia](https://hub.docker.com/r/authelia/authelia)
  is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. `Recommended`
