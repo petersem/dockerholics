@@ -54,7 +54,7 @@ If you have successfully installed the openVPN container, then you should review
 
 ## Installation
 - Create all folders as specified
-- Comy the compose.yaml and .env files to your docker folder
+- Copy the compose.yaml and .env files to your docker folder
 - Update the .env as specified
 - Update the compose.yaml file (but only if you have installed the openVPN stack)
 - Open a teminal or command prompt on your host machine
