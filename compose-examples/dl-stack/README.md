@@ -1,0 +1,45 @@
+# DL-Stack -download pipeline stack
+This will install and create containers for the following apps
+- Radarr
+- Sonarr
+- Lidarr
+- Readarr
+- Prowlarr
+- Bazarr
+- Sabnzbd
+- Qbittorrent
+
+## Prerequisits
+This will install as-is, however the following should be installed first, to gain maximum features
+### Other stacks
+- {docker}
+- openvpn
+
+### Folders
+The following folders should be created
+- docker
+> - /c/docker (on windows)
+> - ~/docker (on linux)
+> - /volume1/docker (on Synology)
+- downloads
+- incomplete
+> These are folders for partial and completed downloads
+- {docker}/prowlarr
+- {docker}/sonarr
+- {docker}/radarr
+- {docker}/lidarr
+- {docker}/bazarr
+- {docker}/readarr
+- {docker}/sabnzbd
+- {docker}/qbittorrent
+> Your media path should be one top-level folder with sub folders for different media types 
+
+### Changes to .env file
+Review the .env and update
+- TZ
+- PUID
+- PGID
+- All path values
+
+### Changes to compose.yaml
+If you have successfully installed the openVPN container, then you should review the compose.yaml file here and remove comments relating to qbittorrent

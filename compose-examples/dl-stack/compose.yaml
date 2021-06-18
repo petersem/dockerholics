@@ -1,0 +1,248 @@
+services:
+  #
+  # Prowlarr - Usenet and Torrent provider
+  #
+  prowlarr:
+    container_name: prowlarr
+    image: linuxserver/prowlarr:nightly
+    ports:
+      - 9696:9696
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - UMASK=002
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/prowlarr:/config
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:9696 > /dev/null || exit 1
+      start_period: 20s
+      timeout: 5s
+      interval: 5s
+      retries: 3    
+    restart: unless-stopped
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+   ## Remove comments, only if you have deployed the openVpn stack prior
+   #   qbittorrent:
+   #     condition: service_healthy
+
+  #
+  # Radarr - Movies Search
+  #
+  radarr:
+    environment:
+      - UMASK_SET=22
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/radarr:/config:rw
+      - $MEDIA_PATH:/media:rw
+      - $DOWNLOADS:/downloads:rw
+    container_name: radarr
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:7878 > /dev/null || exit 1
+      start_period: 20s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+    entrypoint:
+      - /init
+    image: linuxserver/radarr:latest
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+   ## Remove comments, only if you have deployed the openVpn stack prior
+   #   qbittorrent:
+   #     condition: service_healthy
+
+  #
+  # Sonarr - Show Search
+  #
+  sonarr:
+    environment:
+      - UMASK_SET=22
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/sonarr:/config:rw
+      - $MEDIA_PATH:/media:rw
+      - $DOWNLOADS:/downloads:rw
+    container_name: sonarr
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8989 || exit 1
+      start_period: 20s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+    ports:
+      - 8989:8989
+    restart: 'unless-stopped'
+    entrypoint:
+      - /init
+    image: linuxserver/sonarr:develop
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+   ## Remove comments, only if you have deployed the openVpn stack prior
+   #   qbittorrent:
+   #     condition: service_healthy
+
+  lidarr:
+    image: linuxserver/lidarr:nightly
+    container_name: lidarr
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TIME_ZONE
+      - UMASK_SET=022 
+    volumes:
+      - $DOCKER_PATH/lidarr:/config
+      - $MEDIA_PATH:/media
+      - $DOWNLOADS:/downloads:rw
+    ports:
+      - 8686:8686
+    restart: unless-stopped
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8686 > /dev/null || exit 1
+      start_period: 20s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+   ## Remove comments, only if you have deployed the openVpn stack prior
+   #   qbittorrent:
+   #     condition: service_healthy
+
+   #
+   # Bazarr - subtitles search
+   #
+   bazarr:
+    image: linuxserver/bazarr:development
+    container_name: bazarr
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - UMASK_SET=022 #optional
+    volumes:
+      - $DOCKER_PATH/bazarr:/config
+      - $MEDIA_PATH:/media
+    ports:
+      - 6767:6767
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:6767 > /dev/null || exit 1
+      start_period: 40s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+    restart: unless-stopped
+    mem_limit: 300M
+    mem_reservation: 250M
+
+  #
+  # Sabnzbd - Usenet downloader
+  #
+  sabnzbd:
+    image: linuxserver/sabnzbd:unstable
+    container_name: sabnzbd
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs 127.0.0.1:8080 > /dev/null || exit 1
+      startup: 20s
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - $DOCKER_PATH/sabnzbd:/config
+      - $DOWNLOADS:/downloads:rw
+      - $INCOMPLETE:/incomplete-downloads:rw
+    ports:
+      - 8080:8080
+      - 9090:9090
+    restart: unless-stopped  
+  
+  #
+  # E-Book Searcher
+  #
+  readarr:
+    container_name: readarr
+    ports:
+      - 8787:8787
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/readarr:/config
+      - $MEDIA_PATH:/media:rw
+      - $DOWNLOADS:/downloads:rw
+    image: hotio/readarr:nightly    
+    restart: unless-stopped
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8787 > /dev/null || exit 1
+      startup: 20s
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      sabnzbd:
+        condition: service_healthy
+   ## Remove comments, only if you have deployed the openVpn stack prior
+   #   qbittorrent:
+   #     condition: service_healthy
+
+  #
+  # Qbittorrent
+  #
+  ## Uncomment this section once openVPN client has been deployed
+#   qbittorrent:
+#     image: linuxserver/qbittorrent
+#     container_name: qbittorrent
+#     environment:
+#       - PUID=$PUID
+#       - PGID=$PGID
+#       - TZ=$TZ
+#       - UMASK_SET=022
+#       - WEBUI_PORT=9991
+#     volumes:
+#       - $DOCKER_PATH/qbittorrent:/config
+#       - $DOWNLOADS:/downloads
+#     depends_on:
+#       vpn:
+#         condition: service_healthy
+#     network_mode: "service:vpn"
+#     restart: unless-stopped
+#     labels: 
+#       - autoheal=true
+#     healthcheck:
+#       test: curl -fSs https://google.com || exit 1
+#       start_period: 90s
+#       timeout: 10s
+#       interval: 5s
+#       retries: 3
