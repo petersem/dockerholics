@@ -1,4 +1,4 @@
-# DL-Stack -download pipeline stack
+# DL-stack -download pipeline stack
 This will install and create containers for the following apps
 - Radarr
 - Sonarr
