@@ -106,7 +106,7 @@ services:
     environment:
       - PUID=$PUID
       - PGID=$PGID
-      - TZ=$TIME_ZONE
+      - TZ=$TZ
       - UMASK_SET=022 
     volumes:
       - $DOCKER_PATH/lidarr:/config
