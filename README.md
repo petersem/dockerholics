@@ -3,28 +3,30 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
-- [Business](#Business)
-- [Collaboration and Synchronisation](#Collaboration-and-Synchronisation)
-- [Content Creation](#Content-Creation)
-- [Databases](#Databases)
-- [Development](#Development)
-- [Document Management](#Document-Management)
-- [Docker](#Docker)
-- [Downloading and Searching](#Downloading-and-Searching)
-- [E-books](#E-books)
-- [Gaming](#Gaming)
-- [Information Sharing](#Information-Sharing)
-- [Internet](#Internet)
-- [Link Organisation](#Link-Organisation)
-- Media
-  - [Media Servers](#Media-Servers)
-  - [Media Management](#Media-Management)
-  - [Media Utilities](#Media-Utilities)
-- [Monitoring and Management](#Monitoring-and-Management)
-- [Networking and Security](#Networking-and-Security)
-- [Photos](#Photos)
-- [Recipes)(#Recipes)
-- [Security](#Security)
+- [Dockerholics Application List](#dockerholics-application-list)
+  - [Categories](#categories)
+  - [Business](#business)
+  - [Collaboration and Synchronisation](#collaboration-and-synchronisation)
+  - [Content Creation](#content-creation)
+  - [Databases](#databases)
+  - [Development](#development)
+  - [Docker](#docker)
+  - [Document Management](#document-management)
+  - [Downloading and Searching](#downloading-and-searching)
+  - [E-books](#e-books)
+  - [Gaming](#gaming)
+  - [Information Sharing](#information-sharing)
+  - [Internet](#internet)
+  - [Link Organisation](#link-organisation)
+  - [Media Servers](#media-servers)
+  - [Media Management](#media-management)
+  - [Media Utilities](#media-utilities)
+  - [Monitoring and Management](#monitoring-and-management)
+  - [Networking and Security](#networking-and-security)
+  - [Photos](#photos)
+  - [Recipe Management](#recipe-management)
+  - [Security](#security)
+  - [Contributing](#contributing)
 
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
@@ -272,6 +274,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor. `Recommended`
  
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
+
 ## Security
 - [Authelia](https://hub.docker.com/r/authelia/authelia)
  is an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO) for your applications via a web portal. `Recommended`
