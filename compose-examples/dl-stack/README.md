@@ -32,7 +32,15 @@ The following folders should be created
 - {docker}/readarr
 - {docker}/sabnzbd
 - {docker}/qbittorrent
-> Your media path should be one top-level folder with sub folders for different media types 
+> The above folders should be under your `docker` folder.
+
+Your media path should be one top-level folder with sub folders for different media types 
+> For example:
+> - media
+>   - movies
+>   - tv
+>   - music
+>   - ebooks
 
 ### Changes to .env file
 Review the .env and update
