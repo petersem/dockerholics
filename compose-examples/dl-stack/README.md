@@ -24,7 +24,7 @@ The following folders should be created
 - downloads
 - incomplete
 > These are folders for partial and completed downloads
-- {docker}/scripts/dl-pipeline
+- {docker}/scripts/dl
 - {docker}/prowlarr
 - {docker}/sonarr
 - {docker}/radarr
@@ -55,9 +55,9 @@ If you have successfully installed the openVPN container, then you should review
 
 ## Installation
 - Create all folders as specified
-- Copy the compose.yaml and .env files to your `docker/scripts/dl-pipeline` folder
+- Copy the compose.yaml and .env files to your `docker/scripts/dl` folder
 - Update the .env as specified
 - Update the compose.yaml file (but only if you have installed the openVPN stack)
 - Open a teminal or command prompt on your host machine
-- Change to the `docker/scripts/dl-pipeline` folder
+- Change to the `docker/scripts/dl` folder
 - Type 'docker-compose up -d' (prefix with 'sudo' if on Synology)
