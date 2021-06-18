@@ -9,7 +9,7 @@ This will install and create containers for the following apps
 - Sabnzbd
 - Qbittorrent
 
-## Prerequisits
+## Prerequisites
 This will install as-is, however the following stacks should be installed first, to gain maximum features
 ### Other stacks
 - docker
