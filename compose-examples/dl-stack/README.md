@@ -10,9 +10,9 @@ This will install and create containers for the following apps
 - Qbittorrent
 
 ## Prerequisits
-This will install as-is, however the following should be installed first, to gain maximum features
+This will install as-is, however the following stacks should be installed first, to gain maximum features
 ### Other stacks
-- {docker}
+- docker
 - openvpn
 
 ### Folders
@@ -43,3 +43,12 @@ Review the .env and update
 
 ### Changes to compose.yaml
 If you have successfully installed the openVPN container, then you should review the compose.yaml file here and remove comments relating to qbittorrent
+
+## Installation
+- Create all folders as specified
+- Comy the compose.yaml and .env files to your docker folder
+- Update the .env as specified
+- Update the compose.yaml file (but only if you have installed the openVPN stack)
+- Open a teminal or command prompt on your host machine
+- Change to the docker folder
+- Type 'docker-compose up -d' (prefix with 'sudo' if on Synology)
