@@ -121,6 +121,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a popular rtorrent client with a webui for ease of use.
 - [Sabnzbd](https://hub.docker.com/r/linuxserver/sabnzbd)
  makes Usenet as simple and streamlined as possible by automating everything we can. `Recommended`
+- [Transmission-OpenVPN](https://hub.docker.com/r/haugene/transmission-openvpn)
+ is a Torrent Client which runs only when there is an active VPN tunnel. Has built in support for many popular VPN providers. `Recommended`
  
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
