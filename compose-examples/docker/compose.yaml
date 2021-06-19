@@ -1,5 +1,18 @@
 services:
   #
+  # autoheal - restarts unhealthy containers
+  #
+  autoheal:
+    container_name: autoheal
+    restart: always
+    environment:
+      - AUTOHEAL_CONTAINER_LABEL=all
+      - TZ=$TZ
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    image: willfarrell/autoheal
+
+  #
   # Portainer - docker manager
   #
   portainer:

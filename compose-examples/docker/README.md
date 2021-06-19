@@ -1,5 +1,6 @@
 # Docker - Docker app stack
 This will install and create containers for the following apps
+- autoheal
 - Portainer
 - Watchtower
 - Dozzle

@@ -41,7 +41,7 @@ services:
       - $DOCKER_PATH/proxymanagerdb:/config
     restart: always
     labels:
-      - autoheal
+      - autoheal=true
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "--silent"] 
 
@@ -60,6 +60,8 @@ services:
     dns:
       - 1.1.1.1
     image: dperson/openvpn-client
+    label:
+      - autoheal=true
     security_opt:
       - label:disable
     cap_add:
