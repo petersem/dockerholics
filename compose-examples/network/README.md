@@ -1,7 +1,7 @@
 # Network - networking stack
 This will install and create containers for the following apps
 - Nginx Proxy Manager
-- openVPN
+- openVPN (Requires configuration once created)
 - LibreSpeed
 
 ### Folders
