@@ -1,0 +1,89 @@
+services:
+  #
+  # Proxymanager - Nginx Proxy Manager
+  #
+  proxymanager:
+    container_name: proxymanager
+    image: jc21/nginx-proxy-manager
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DB_MYSQL_HOST: 'proxymanagerdb'
+      DB_MYSQL_PORT: 3306
+      DB_MYSQL_USER: $NPMUSER
+      DB_MYSQL_PASSWORD: $NPMPSW
+      DB_MYSQL_NAME: 'npm'
+    ports:
+      - 880:80 
+      - 881:81
+      - 843:443 
+    volumes:
+      - $DOCKER_PATH/proxymanager/data:/data
+      - $DOCKER_PATH/proxymanager/letsencrypt:/etc/letsencrypt
+    restart: always
+    depends_on:
+      proxymanagerdb:
+        condition: service_healthy
+
+  #
+  # Proxymanagerdb - MariaDB database for Nginx Proxy Manager
+  #      
+  proxymanagerdb:
+    container_name: proxymanagerdb
+    image: ghcr.io/linuxserver/mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: $NPMROOT
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: $NPMUSER
+      MYSQL_PASSWORD: $NPMPSW
+    volumes:
+      - $DOCKER_PATH/proxymanagerdb:/config
+    restart: always
+    labels:
+      - autoheal
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "--silent"] 
+
+  #
+  # vpn - openVPN client container
+  #
+  vpn:
+    devices:
+      - /dev/net/tun
+    restart: unless-stopped
+    container_name: vpn
+   # privileged: true
+    #ports:
+      # qbittorrent
+      #- 7881:6881
+      #- 9991:9991
+    dns:
+      - 1.1.1.1
+    image: dperson/openvpn-client
+    security_opt:
+      - label:disable
+    cap_add:
+      - NET_ADMIN
+    stdin_open: true
+    tty: true
+    volumes:
+      - $DOCKER_PATH/openvpn:/vpn
+    command: -f ""
+
+  #
+  # librespeed - internal speed test host to lan device
+  #
+  librespeed:
+    image: linuxserver/librespeed
+    container_name: librespeed
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - PASSWORD=#LIBREPSW
+    volumes:
+      - $DOCKER_PATH/librespeed:/config
+    ports:
+      - 8383:80
+    restart: unless-stopped
