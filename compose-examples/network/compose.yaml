@@ -53,7 +53,6 @@ services:
       - /dev/net/tun
     restart: unless-stopped
     container_name: vpn
-   # privileged: true
     #ports:
       # qbittorrent
       #- 7881:6881
