@@ -13,10 +13,6 @@ This will install and create containers for the following apps
 ## Prerequisites
 This will install as-is, however best with OpenVPN (for qbittorrent), Portainer, and Watchtower
 
-### Other stacks
-- docker (not written yet)
-- openvpn (not written yet)
-
 ### Folders
 The following folders should be created
 - docker
