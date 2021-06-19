@@ -10,7 +10,8 @@ This will install and create containers for the following apps
 - Qbittorrent
 
 ## Prerequisites
-This will install as-is, **without** QBittorrent. The following stacks should be installed first, to gain maximum features
+This will install as-is, however best with OpenVPN (for qbittorrent), Portainer, and Watchtower
+
 ### Other stacks
 - docker (not written yet)
 - openvpn (not written yet)

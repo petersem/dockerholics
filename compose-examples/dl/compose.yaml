@@ -26,9 +26,8 @@ services:
     depends_on:
       sabnzbd:
         condition: service_healthy
-   ## Remove comments, only if you have deployed the openVpn stack prior
-   #   qbittorrent:
-   #     condition: service_healthy
+      qbittorrent:
+        condition: service_healthy
 
   #
   # Radarr - Movies Search
@@ -61,9 +60,8 @@ services:
     depends_on:
       sabnzbd:
         condition: service_healthy
-   ## Remove comments, only if you have deployed the openVpn stack prior
-   #   qbittorrent:
-   #     condition: service_healthy
+      qbittorrent:
+        condition: service_healthy
 
   #
   # Sonarr - Show Search
@@ -96,9 +94,8 @@ services:
     depends_on:
       sabnzbd:
         condition: service_healthy
-   ## Remove comments, only if you have deployed the openVpn stack prior
-   #   qbittorrent:
-   #     condition: service_healthy
+      qbittorrent:
+        condition: service_healthy
 
   lidarr:
     image: linuxserver/lidarr:nightly
@@ -126,9 +123,8 @@ services:
     depends_on:
       sabnzbd:
         condition: service_healthy
-   ## Remove comments, only if you have deployed the openVpn stack prior
-   #   qbittorrent:
-   #     condition: service_healthy
+      qbittorrent:
+        condition: service_healthy
 
    #
    # Bazarr - subtitles search
@@ -213,36 +209,34 @@ services:
     depends_on:
       sabnzbd:
         condition: service_healthy
-   ## Remove comments, only if you have deployed the openVpn stack prior
-   #   qbittorrent:
-   #     condition: service_healthy
+      qbittorrent:
+        condition: service_healthy
 
   #
   # Qbittorrent
   #
-  ## Uncomment this section once openVPN client has been deployed
-#   qbittorrent:
-#     image: linuxserver/qbittorrent
-#     container_name: qbittorrent
-#     environment:
-#       - PUID=$PUID
-#       - PGID=$PGID
-#       - TZ=$TZ
-#       - UMASK_SET=022
-#       - WEBUI_PORT=9991
-#     volumes:
-#       - $DOCKER_PATH/qbittorrent:/config
-#       - $DOWNLOADS:/downloads
-#     depends_on:
-#       vpn:
-#         condition: service_healthy
-#     network_mode: "service:vpn"
-#     restart: unless-stopped
-#     labels: 
-#       - autoheal=true
-#     healthcheck:
-#       test: curl -fSs https://google.com || exit 1
-#       start_period: 90s
-#       timeout: 10s
-#       interval: 5s
-#       retries: 3
+  qbittorrent:
+    image: linuxserver/qbittorrent
+    container_name: qbittorrent
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - UMASK_SET=022
+      - WEBUI_PORT=9991
+    volumes:
+      - $DOCKER_PATH/qbittorrent:/config
+      - $DOWNLOADS:/downloads
+    ports:
+      - 6881:6881
+      - 6881:6881/udp
+      - 9991:9991
+    restart: unless-stopped
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fSs https://google.com || exit 1
+      start_period: 90s
+      timeout: 10s
+      interval: 5s
+      retries: 3
