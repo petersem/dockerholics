@@ -53,10 +53,10 @@ services:
       - /dev/net/tun
     restart: unless-stopped
     container_name: vpn
-    #ports:
-      # qbittorrent
-      #- 7881:6881
-      #- 9991:9991
+    #open any ports for containers which will use this vpn network
+    ports:
+      - 7881:6881
+      - 9991:8080
     dns:
       - 1.1.1.1
     image: dperson/openvpn-client

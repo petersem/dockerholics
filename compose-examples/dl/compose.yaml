@@ -227,9 +227,11 @@ services:
     volumes:
       - $DOCKER_PATH/qbittorrent:/config
       - $DOWNLOADS:/downloads
-    ports:
-      - 7881:6881
-      - 9991:8080
+    # this line forces qbittorrent to use the vpn container (in network stack)
+    network_mode: "service:vpn"
+    # ports:
+    #   - 7881:6881
+    #   - 9991:8080
     restart: unless-stopped
     labels: 
       - autoheal=true
