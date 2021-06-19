@@ -19,9 +19,9 @@ The following folders should be created
 > - /c/docker (on windows)
 > - ~/docker (on linux)
 > - /volume1/docker (on Synology)
-- downloads
-- incomplete
-> These are folders for partial and completed downloads
+- *somewhere*/downloads
+- *somewhere*incomplete
+> These above folders are for partial and completed downloads. Put them under a folder wherever you wish.
 - {docker}/scripts/dl
 - {docker}/prowlarr
 - {docker}/sonarr
