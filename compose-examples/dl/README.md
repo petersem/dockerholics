@@ -22,7 +22,6 @@ The following folders should be created
 - *somewhere*/downloads
 - *somewhere*/incomplete
 > These above folders are for partial and completed downloads. Put them under a folder wherever you wish.
-- {docker}/scripts/dl
 - {docker}/prowlarr
 - {docker}/sonarr
 - {docker}/radarr
