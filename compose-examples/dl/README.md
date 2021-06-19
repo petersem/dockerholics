@@ -8,6 +8,7 @@ This will install and create containers for the following apps
 - Bazarr
 - Sabnzbd
 - Qbittorrent
+> Do not use Qbittorrent until it is protected by a VPN
 
 ## Prerequisites
 This will install as-is, however best with OpenVPN (for qbittorrent), Portainer, and Watchtower
@@ -50,15 +51,3 @@ Review the .env and update
 - PUID
 - PGID
 - All path values
-
-### Changes to compose.yaml
-If you have successfully installed the openVPN container, then you should review the compose.yaml file here and remove comments relating to qbittorrent
-
-## Installation
-- Create all folders as specified
-- Copy the compose.yaml and .env files to your `docker/scripts/dl` folder
-- Update the .env as specified
-- Update the compose.yaml file (but only if you have installed the openVPN stack)
-- Open a teminal or command prompt on your host machine
-- Change to the `docker/scripts/dl` folder
-- Type 'docker-compose up -d' (prefix with 'sudo' if on Synology)

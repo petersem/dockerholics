@@ -1,6 +1,6 @@
 services:
   #
-  # Prowlarr - Usenet and Torrent provider
+  # Prowlarr - index aggregator
   #
   prowlarr:
     container_name: prowlarr
@@ -126,10 +126,10 @@ services:
       qbittorrent:
         condition: service_healthy
 
-   #
-   # Bazarr - subtitles search
-   #
-   bazarr:
+  #
+  # Bazarr - subtitles search
+  #
+  bazarr:
     image: linuxserver/bazarr:development
     container_name: bazarr
     environment:
@@ -168,7 +168,7 @@ services:
       - autoheal=true
     healthcheck:
       test: curl -fSs 127.0.0.1:8080 > /dev/null || exit 1
-      startup: 20s
+      start_period: 20s
       interval: 5s
       timeout: 5s
       retries: 3
@@ -202,7 +202,7 @@ services:
       - autoheal=true
     healthcheck:
       test: curl -fSs http://127.0.0.1:8787 > /dev/null || exit 1
-      startup: 20s
+      start_period: 20s
       interval: 5s
       timeout: 5s
       retries: 3
@@ -223,14 +223,13 @@ services:
       - PGID=$PGID
       - TZ=$TZ
       - UMASK_SET=022
-      - WEBUI_PORT=9991
+      - WEBUI_PORT=8080
     volumes:
       - $DOCKER_PATH/qbittorrent:/config
       - $DOWNLOADS:/downloads
     ports:
-      - 6881:6881
-      - 6881:6881/udp
-      - 9991:9991
+      - 7881:6881
+      - 9991:8080
     restart: unless-stopped
     labels: 
       - autoheal=true
