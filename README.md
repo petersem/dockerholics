@@ -1,9 +1,16 @@
 ![Dockerholics](dockerholics-logo.png "Dockerholics")
+# Docker application templates
+Use these to better learn about Docker-compose, or for you to use when teaching others about compose. 
+- [Docker](/docker)
+- [Downloads](/dl)
+- [Networking](/network)
+
 # [Dockerholics](https://www.facebook.com/groups/205764024543769) Application List
 This is a list of free applications which can be hosted locally  in Docker containers. These are images that the group experts have tried out and verified.
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
+- [Docker application templates](#docker-application-templates)
 - [Dockerholics Application List](#dockerholics-application-list)
   - [Categories](#categories)
   - [Business](#business)
