@@ -10,7 +10,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
-- [Docker [Application templates]](#docker-application-templates)
 - [Dockerholics Application List](#dockerholics-application-list)
   - [Categories](#categories)
   - [Business](#business)
