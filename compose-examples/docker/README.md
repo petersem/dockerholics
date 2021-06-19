@@ -1,4 +1,4 @@
-# DL - download pipeline stack
+# Docker - Docker app stack
 This will install and create containers for the following apps
 - Portainer
 - Watchtower
