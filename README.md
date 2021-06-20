@@ -227,7 +227,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Monitoring and Management
-- [ChangeDetection]((https://hub.docker.com/r/dgtlmoon/changedetection.io))
+- [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io))
  lets you know when web pages change! Stay on top of new information!
 - [Grafana](https://hub.docker.com/r/grafana/grafana)
  Query, visualize, alert on, and understand your data no matter where it’s stored.
