@@ -1,6 +1,6 @@
 ![Dockerholics](dockerholics-logo.png "Dockerholics")
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
-Use these to better learn about Docker-compose, or for you to use when teaching others about compose. 
+Use these to better learn about, or when teaching, Docker-compose. 
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
 - [Downloads](https://github.com/petersem/dockerholics/tree/main/compose-examples/dl)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
