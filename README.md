@@ -149,7 +149,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Finance
 - [Firefly III](https://hub.docker.com/r/fireflyiii/core)
- is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
+ is a manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
