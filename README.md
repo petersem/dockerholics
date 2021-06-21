@@ -79,6 +79,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.
 - [PostgreSQL](https://hub.docker.com/_/postgres/)
  is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices. It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability. [Docs](https://www.postgresql.org/docs/)
+- [Redis](https://hub.docker.com/_/redis)
+ is an open source, in-memory data structure store, used as a database, cache, and message broker. For example to improve speed of "Authelia". [Docs](https://redis.io/documentation/)
  
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
