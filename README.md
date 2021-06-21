@@ -133,8 +133,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## E-books
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
  is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
- - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
+- [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
+- [Cops](https://hub.docker.com/r/linuxserver/cops)
+ links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. `Recommended` 
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -215,6 +217,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex! `Recommended`
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  is a media poster display for Plex, Sonarr, and Radarr
+- [Reqestrr](https://hub.docker.com/r/linuxserver/requestrr)
+ is a chatbot used to simplify using services like Sonarr/Radarr/Ombi via the use of chat.
 - [Tautulli](https://hub.docker.com/r/tautulli/tautulli)
  will monitor your Plex Media Server `Recommended`
 - [Tdarr](https://hub.docker.com/r/haveagitgat/tdarr)
@@ -259,6 +263,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  uses Docker to run Pi-Hole with an upstream Unbound resolver `Recommended`
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
  is a non-caching web proxy, with advanced features.
+- [Speed Test](https://hub.docker.com/r/e7db/speedtest)
+ is a self-hosted, lightweight speed test implemented in JavaScript, and based on Web Workers and XMLHttpRequest.
 - [Traefik](https://hub.docker.com/_/traefik)
  is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
 
@@ -267,6 +273,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Photos
 - [Chevereto](https://hub.docker.com/r/linuxserver/chevereto)
  is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server.
+- [LibrePhotos](https://github.com/LibrePhotos/librephotos)
+ is a self-hosted open source photo management service, with a slight focus on cool graphs
 - [Lychee](https://hub.docker.com/r/lycheeorg/lychee)
  is a great looking and easy-to-use photo-management-system.
 - [PhotoShow](https://hub.docker.com/r/linuxserver/photoshow)
