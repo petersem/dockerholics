@@ -104,6 +104,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
+- [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
+ Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ng.readthedocs.io/en/latest/) `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
