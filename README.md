@@ -19,6 +19,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Document Management](#document-management)
   - [Downloading and Searching](#downloading-and-searching)
   - [E-books](#e-books)
+  - [Finance](#finance)
   - [Gaming](#gaming)
   - [Information Sharing](#information-sharing)
   - [Internet](#internet)
@@ -139,6 +140,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
 - [Cops](https://hub.docker.com/r/linuxserver/cops)
  links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. `Recommended` 
+
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+
+## Finance
+- [Firefly III](https://hub.docker.com/r/fireflyiii/core)
+ "Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
