@@ -1,7 +1,7 @@
 docker-compose -f ./docker/compose.yaml up -d
-docker-compose -f ./dl/compose.yaml up -d
+docker-compose -f ./download/compose.yaml up -d
 docker-compose -f ./network/compose.yaml up -d
-
+docker-compose -f ./plex/compose.yaml up -d
 
 Or just go into each folder and type 
   docker-compose up -d
