@@ -64,6 +64,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. `Recommended`
 - [Joplin](https://hub.docker.com/r/joplin/server)
  is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. (see github page for client/server install instructions)
+- [Wordpress](https://hub.docker.com/_/wordpress)
+ is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plugin architecture and a template system.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
