@@ -56,7 +56,7 @@ services:
     restart: unless-stopped
     entrypoint:
       - /init
-    image: linuxserver/radarr:latest
+    image: linuxserver/radarr
     depends_on:
       sabnzbd:
         condition: service_healthy
