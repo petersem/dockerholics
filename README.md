@@ -19,6 +19,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Document Management](#document-management)
   - [Downloading and Searching](#downloading-and-searching)
   - [E-books](#e-books)
+  - [Finance](#finance)
   - [Gaming](#gaming)
   - [Information Sharing](#information-sharing)
   - [Internet](#internet)
@@ -80,6 +81,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an open source time series database for recording metrics, events, and analytics. `Recommended`
 - [PHPMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
  is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.
+- [PostgreSQL](https://hub.docker.com/_/postgres/)
+ is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices. It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability. [Docs](https://www.postgresql.org/docs/)
+- [Redis](https://hub.docker.com/_/redis)
+ is an open source, in-memory data structure store, used as a database, cache, and message broker. For example to improve speed of "Authelia". [Docs](https://redis.io/documentation/)
  
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -145,6 +150,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
 - [Cops](https://hub.docker.com/r/linuxserver/cops)
  links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. `Recommended` 
+
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+
+## Finance
+- [Firefly III](https://hub.docker.com/r/fireflyiii/core)
+ is a manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
