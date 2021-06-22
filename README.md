@@ -62,6 +62,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more.
 - [Ghost](https://hub.docker.com/_/ghost)
  is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. `Recommended`
+- [Joplin](https://hub.docker.com/r/joplin/server)
+ is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. (see github page for client/server install instructions)
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
@@ -80,6 +82,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Development
+- [Cloud9](https://hub.docker.com/r/linuxserver/cloud9)
+ is a complete web based IDE with terminal access. 
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. `Recommended`
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
