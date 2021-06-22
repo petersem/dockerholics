@@ -1,0 +1,117 @@
+services:
+  # Poster
+  posterr:
+    image: petersem/posterr
+    container_name: posterr
+    environment:
+      TZ: $TZ
+    volumes:
+      - $DOCKER_PATH/posterr/randomthemes:/usr/src/app/public/randomthemes
+      - $DOCKER_PATH/posterr/config:/usr/src/app/config
+    ports:
+      - 9876:3000
+    restart: unless-stopped
+
+  # moviematch - allows two or more people to select movies to watch on plex
+  moviematch:
+    container_name: moviematch
+    restart: unless-stopped
+    image: lukechannings/moviematch
+    ports:
+      - 2001:8000
+    environment:
+      - PLEX_TOKEN=$PLEX_TOKEN
+      - PLEX_URL=$PURL
+      - LIBRARY_FILTER=$LIBFILTER
+#      - ROOT_PATH=/
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    depends_on:
+      plex:
+        condition: service_healthy
+
+  # gaps - finds missing movies in plex libraries
+  gaps:
+    ports:
+      - 8484:8484
+    container_name: gaps
+    expose:
+      - '32400'
+    volumes:
+      - $DOCKER_PATH/gaps:/usr/data
+    image: housewrecker/gaps
+    restart: unless-stopped  
+
+  plex:
+    container_name: plex
+    hostname: $HOST_NAME
+    restart: unless-stopped
+    image: linuxserver/plex
+    volumes:
+      - $DOCKER_PATH/plex/config:/config
+      - $DOCKER_PATH/plex/transcode:/transcode
+      - $MEDIA_PATH:/media
+#    network_mode: host
+    ports: 
+      - "32400:32400/tcp"
+      - "3005:3005/tcp"
+      - "8324:8324/tcp"
+      - "32469:32469/tcp"
+      - "1901:1900/udp"
+      - "32410:32410/udp"
+      - "32412:32412/udp"
+      - "32413:32413/udp"
+      - "32414:32414/udp"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - HOSTNAME=$HOST_NAME
+      - PLEX_CLAIM=$PLEX_CLAIM_TOKEN
+      - ADVERTISE_IP=$ADVERTISE_IP
+      - VERSION=$VERSION
+      - ALLOWED_NETWORKS=$ALLOWED_NETWORKS
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -fsS http://localhost:32400/identity > /dev/null || exit 1
+      start_period: 60s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+    # Remove this section if no embedded intel GPU
+    # devices:
+    #   - /dev/dri:/dev/dri
+    # cpu_percent: 50
+    #mem_limit: 1500M
+    #mem_reservation: 1300M
+
+  tautulli:
+    environment:
+      - HOME=/root
+      - TERM=xterm
+      - TAUTULLI_DOCKER=True
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/tautulli:/config:rw
+      - $DOCKER_PATH/plex/config/Library/Application Support/Plex Media Server/Logs:/logs:ro
+    container_name: tautulli
+    ports:
+      - 8181:8181
+    labels: 
+      - autoheal=true
+    healthcheck:
+      test: curl -ILfSs http://localhost:8181/status > /dev/null || curl -ILfkSs https://localhost:8181/status > /dev/null
+      start_period: 120s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+    restart: 'unless-stopped'
+    image: tautulli/tautulli
+    depends_on:
+      plex:
+        condition: service_healthy
