@@ -5,7 +5,6 @@ This will install and create containers for the following apps
 - MovieMatch
 - Gaps
 - Posterr
-- 
 
 ## Prerequisites
 The following folders should be created
