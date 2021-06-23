@@ -88,6 +88,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a complete web based IDE with terminal access. 
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. `Recommended`
+- [Gitea](https://hub.docker.com/r/gitea/gitea)
+ is a community managed painless self-hosted Git service.
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
  is a low-code programming for event-driven applications
 
