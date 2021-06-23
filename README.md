@@ -46,6 +46,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Collaboration and Synchronisation
 - [FileRun](https://hub.docker.com/r/afian/filerun)
  is a self-hosted Google Drive alternative. It is a full featured web based file manager with an easy to use user interface.
+- [FileBrowser](https://hub.docker.com/r/filebrowser/filebrowser)
+ provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. `Recommended`
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
 - [NextCloud](https://hub.docker.com/_/nextcloud)
