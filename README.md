@@ -6,7 +6,7 @@ Use these to better learn about, or when teaching, Docker-compose.
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
 
-# [Dockerholics](https://www.facebook.com/groups/205764024543769) - Application List
+# [Dockerholics](https://www.facebook.com/groups/205764024543769) Application List
 This is a list of free applications which can be hosted locally  in Docker containers. These are images that the group experts have tried out and verified.
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
