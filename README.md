@@ -201,6 +201,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Servers
+
 - [Emby](https://hub.docker.com/r/linuxserver/emby)
  organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.
 - [JellyFin](https://hub.docker.com/r/linuxserver/jellyfin)
@@ -227,6 +228,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 ## Media Utilities
+- [AirSonic](https://hub.docker.com/r/airsonic/airsonic)
+ is a free, web-based media streamer, providing ubiquitous access to your music.
 - [AllTube](https://hub.docker.com/r/rudloff/alltube)
  is a HTML GUI for youtube-dl
 - [DizQueTV](https://hub.docker.com/r/vexorian/dizquetv)
