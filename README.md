@@ -56,6 +56,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
  replaces proprietary sync and cloud services with something open, trustworthy and decentralized.
+- [WBO](https://hub.docker.com/r/lovasoa/wbo)
+ is an online collaborative whiteboard that is simple, easy to use and open-source.
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
