@@ -76,10 +76,10 @@ services:
       - VERSION=docker
       - ALLOWED_NETWORKS=$ALLOWED_NETWORKS
     labels: 
-      - autoheal=true
+      autoheal: 'true'
     healthcheck:
       test: curl -fsS http://localhost:32400/identity > /dev/null || exit 1
-      start_period: 60s
+      start_period: 20s
       timeout: 10s
       interval: 5s
       retries: 3
@@ -100,7 +100,7 @@ services:
     ports:
       - 8181:8181
     labels: 
-      - autoheal=true
+      autoheal: 'true'
     healthcheck:
       test: curl -ILfSs http://localhost:8181/status > /dev/null || curl -ILfkSs https://localhost:8181/status > /dev/null
       start_period: 120s
