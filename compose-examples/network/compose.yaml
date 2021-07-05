@@ -44,6 +44,10 @@ services:
       - autoheal=true
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "--silent"] 
+      start_period: 120s
+      timeout: 10s
+      interval: 5s
+      retries: 3
 
   #
   # vpn - openVPN client container
