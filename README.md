@@ -112,6 +112,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only. `Recommended`
 - [Volume-Backup](https://hub.docker.com/r/loomchild/volume-backup)
  is a utility to backup and restore docker volumes.
+- [Monocker](https://hub.docker.com/r/petersem/monocker)
+ Monitor and alert on container state changes
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. `Recommended`
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
