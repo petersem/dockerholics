@@ -275,6 +275,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 - [Telegraf](https://hub.docker.com/_/telegraf)
  is an agent for collecting metrics and writing them to InfluxDB or other outputs.
+- [Uptime Kuma](https://hub.docker.com/r/louislam/uptime-kuma)
+ is a fancy self-hosted website/ip monitoring tool . `Recommended`
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
