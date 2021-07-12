@@ -21,7 +21,8 @@ services:
     restart: always
     command: -H unix:///var/run/docker.sock
     ports:
-      - "9000:9000"
+      - 9000:9000
+      - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - $DOCKER_PATH/portainer:/data
