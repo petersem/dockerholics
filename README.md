@@ -2,7 +2,7 @@
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to better learn about, or when teaching, Docker-compose. 
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
-- [Downloads](https://github.com/petersem/dockerholics/tree/main/compose-examples/dl)
+- [Download](https://github.com/petersem/dockerholics/tree/main/compose-examples/download)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
 
