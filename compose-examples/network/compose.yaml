@@ -31,7 +31,7 @@ services:
   #      
   proxymanagerdb:
     container_name: proxymanagerdb
-    image: ghcr.io/linuxserver/mariadb
+    image: ghcr.io/linuxserver/mariadb:alpine
     environment:
       MYSQL_ROOT_PASSWORD: $NPMROOT
       MYSQL_DATABASE: 'npm'
