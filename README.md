@@ -133,6 +133,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
+- [Exatorrent](https://github.com/varbhat/exatorrent)
+ Modern layout and light weight torrent app.
 - [Gaps](https://hub.docker.com/r/housewrecker/gaps)
  Search your movies and find missing movies from MovieDB collections. `Recommended`
 - [Jackett](https://hub.docker.com/r/linuxserver/jackett)
