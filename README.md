@@ -2,7 +2,7 @@
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to better learn about, or when teaching, Docker-compose. 
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
-- [Downloads](https://github.com/petersem/dockerholics/tree/main/compose-examples/dl)
+- [Download](https://github.com/petersem/dockerholics/tree/main/compose-examples/download)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
 
@@ -339,4 +339,4 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
 
-> If you like my work, you can make a dontation to say thanks! [Buy me a coffee](https://www.paypal.com/paypalme/thanksmp)
+> If you like my work, you can make a donation to say thanks! [Buy me a coffee](https://www.paypal.com/paypalme/thanksmp)
