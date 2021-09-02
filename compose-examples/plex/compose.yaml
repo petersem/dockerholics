@@ -83,9 +83,9 @@ services:
       timeout: 10s
       interval: 5s
       retries: 3
-    # Remove this section if no embedded intel GPU
-    devices:
-      - /dev/dri:/dev/dri
+    # Un-comment the below if you have an embedded intel GPU
+    #devices:
+    #  - /dev/dri:/dev/dri
 
   tautulli:
     environment:

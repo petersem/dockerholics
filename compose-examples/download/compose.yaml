@@ -158,7 +158,7 @@ services:
   # Sabnzbd - Usenet downloader
   #
   sabnzbd:
-    image: linuxserver/sabnzbd:unstable
+    image: linuxserver/sabnzbd
     container_name: sabnzbd
     environment:
       - PUID=$PUID
@@ -228,7 +228,7 @@ services:
       - $DOCKER_PATH/qbittorrent:/config
       - $DOWNLOADS:/downloads
     # this line forces qbittorrent to use the vpn container (in network stack)
-    network_mode: "container:vpn"
+    network_mode: "services:vpn"
     # ports:
     #   - 7881:6881
     #   - 9991:8080
