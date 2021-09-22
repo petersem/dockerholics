@@ -1,4 +1,5 @@
 ![Dockerholics](dockerholics-logo.png "Dockerholics")
+Join our [Dockerholics](https://www.facebook.com/groups/205764024543769) community
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to better learn about, or when teaching, Docker-compose. 
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
