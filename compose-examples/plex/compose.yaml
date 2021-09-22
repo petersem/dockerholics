@@ -45,7 +45,6 @@ services:
 
   plex:
     container_name: plex
-    hostname: $HOST_NAME
     restart: unless-stopped
     image: linuxserver/plex
     volumes:
@@ -63,9 +62,6 @@ services:
     #   - "32412:32412/udp"
     #   - "32413:32413/udp"
     #   - "32414:32414/udp"
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
     environment:
       - PUID=$PUID
       - PGID=$PGID
