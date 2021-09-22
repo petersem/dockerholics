@@ -175,6 +175,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Gaming
 - [OpenRA](https://hub.docker.com/r/rmoriz/openra)
  is a multi-player network client for the OpenRA game
+- [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
+ Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
 
 **[`^        back to top        ^`](#Dockerholics-Application-List)**
 
