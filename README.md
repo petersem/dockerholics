@@ -147,7 +147,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a meta search application for NZB indexers, the "spiritual successor" to NZBmegasearcH, and an evolution of the original application NZBHydra.
 - [Prowlarr](https://hub.docker.com/r/linuxserver/prowlarr)
  is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. `Recommended`
-- [QbitTorrent](https://hub.docker.com/r/linuxserver/qbittorrent)
+- [QbitTorrent](https://hub.docker.com/r/hotio/qbittorrent)
  aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library. `Recommended`
 - [RuTorrent](https://hub.docker.com/r/linuxserver/rutorrent)
  is a popular rtorrent client with a webui for ease of use.

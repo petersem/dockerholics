@@ -213,17 +213,16 @@ services:
         condition: service_healthy
 
   #
-  # Qbittorrent
+  # Qbittorrent - default creds are admin & adminadmin
   #
   qbittorrent:
-    image: linuxserver/qbittorrent
+    image: hotio/qbittorrent
     container_name: qbittorrent
     environment:
       - PUID=$PUID
       - PGID=$PGID
       - TZ=$TZ
       - UMASK_SET=022
-      - WEBUI_PORT=8080
     volumes:
       - $DOCKER_PATH/qbittorrent:/config
       - $DOWNLOADS:/downloads
@@ -231,7 +230,7 @@ services:
     network_mode: "services:vpn"
     # ports:
     #   - 7881:6881
-    #   - 9991:8080
+    #   - 8080:8080
     restart: unless-stopped
     labels: 
       - autoheal=true
