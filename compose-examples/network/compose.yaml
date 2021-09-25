@@ -92,3 +92,48 @@ services:
     ports:
       - 8383:80
     restart: unless-stopped
+
+  #
+  # Pi-hole with Unbound
+  #
+  pihole:
+    container_name: pihole
+    image: cbcrowe/pihole-unbound:latest
+    hostname: ${HOSTNAME}
+    domainname: ${LAN_DOMAIN_NAME}
+    cap_add:
+      - NET_ADMIN
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
+    ports:
+      - 6443:443/tcp
+      - 53:53/tcp
+      - 53:53/udp
+      - 80:80/tcp
+      - 22/tcp # Uncomment to enable SSH
+    environment:
+      ServerIP: $PH_SVR_IP
+      TZ: $TZ
+      WEBPASSWORD: $PH_PSW
+      REV_SERVER: ${REV_SERVER}
+      REV_SERVER_TARGET: ${REV_SERVER_TARGET}
+      REV_SERVER_DOMAIN: ${REV_SERVER_DOMAIN}
+      REV_SERVER_CIDR: ${REV_SERVER_CIDR}
+      DNS1: 127.0.0.1#5335 # Hardcoded to our Unbound server
+      DNS2: 127.0.0.1#5335 # Hardcoded to our Unbound server
+      DNSSEC: "true" # Enable DNSSEC
+      TEMPERATUREUNIT: c
+      ADMIN_EMAIL: $GM_USER
+    volumes:
+      - '$PERSIST/pihole/etc-pihole/:/etc/pihole'
+      - '$PERSIST/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d'
+    labels: 
+      autoheal: 'true'
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:80 || exit 1
+      start_period: 15s
+      timeout: 5s
+      interval: 15s
+      retries: 3
+    restart: unless-stopped
