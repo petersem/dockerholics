@@ -7,7 +7,7 @@ Use these to better learn about Docker-Compose.
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
 
-# [Dockerholics](https://www.facebook.com/groups/205764024543769 #Dockerholics-Application-List) Application List 
+# Dockerholics Application List
 This is a list of free applications which can be hosted locally  in Docker containers. These are images that the group experts have tried out and verified.
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
@@ -45,7 +45,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Duplicacy](https://github.com/gilbertchen/duplicacy)
  Duplicacy is a new generation cross-platform cloud backup tool based on the idea of [Lock-Free Deduplication](https://github.com/gilbertchen/duplicacy/wiki/Lock-Free-Deduplication).
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
@@ -53,7 +53,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Monica](https://hub.docker.com/_/monica)
  is the Personal Relationship Manager. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Collaboration and Synchronisation
 - [FileRun](https://hub.docker.com/r/afian/filerun)
@@ -71,7 +71,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [WBO](https://hub.docker.com/r/lovasoa/wbo)
  is an online collaborative whiteboard that is simple, easy to use and open-source.
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Content Creation
 - [BookStack](https://hub.docker.com/r/linuxserver/bookstack)
@@ -87,7 +87,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Wordpress](https://hub.docker.com/_/wordpress)
  is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plugin architecture and a template system. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Databases
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
@@ -105,7 +105,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Redis](https://hub.docker.com/_/redis)
  is an open source, in-memory data structure store, used as a database, cache, and message broker. For example to improve speed of "Authelia". [Docs](https://redis.io/documentation/)
  
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Development
 - [Cloud9](https://hub.docker.com/r/linuxserver/cloud9)
@@ -117,7 +117,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
  is a low-code programming for event-driven applications
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Docker
 - [Autoheal](https://hub.docker.com/r/willfarrell/autoheal)
@@ -133,7 +133,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
  is a process for automating Docker container base image updates. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
@@ -141,7 +141,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
  Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ng.readthedocs.io/en/latest/) `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Downloading and Searching
 > Always use a VPN or SSL connection for dowload tools
@@ -166,7 +166,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Transmission-OpenVPN](https://hub.docker.com/r/haugene/transmission-openvpn)
  is a Torrent Client which runs only when there is an active VPN tunnel. Has built in support for many popular VPN providers. `Recommended`
  
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## E-books
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
@@ -176,13 +176,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Cops](https://hub.docker.com/r/linuxserver/cops)
  links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. `Recommended` 
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Finance
 - [Firefly III](https://hub.docker.com/r/fireflyiii/core)
  is a manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Gaming
 - [OpenRA](https://hub.docker.com/r/rmoriz/openra)
@@ -190,13 +190,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
  Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Information Sharing
 - [MagicMirror²](https://hub.docker.com/r/bastilimbach/docker-magicmirror)
  is an open source modular smart mirror platform. With a growing list of installable modules, which allows you to convert your hallway or bathroom mirror into your personal assistant. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Internet
 - [FreshRSS](https://hub.docker.com/r/linuxserver/freshrss)
@@ -206,7 +206,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [NginX](https://hub.docker.com/_/nginx)
  is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server.
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
  
 ## Link Organisation
 - [DashMachine](https://hub.docker.com/r/rmountjoy/dashmachine)
@@ -218,7 +218,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Media Servers
 - [AirSonic](https://hub.docker.com/r/airsonic/airsonic)
@@ -230,7 +230,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Plex](https://hub.docker.com/r/linuxserver/plex)
  organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Media Management
 - [Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
@@ -246,7 +246,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
  is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Media Utilities
 - [AllTube](https://hub.docker.com/r/rudloff/alltube)
@@ -276,7 +276,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Varken](https://hub.docker.com/r/boerderij/varken)
  is a standalone command-line utility to aggregate data from the Plex ecosystem into InfluxDB 
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Monitoring and Management
 - [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io)
@@ -296,7 +296,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Uptime Kuma](https://hub.docker.com/r/louislam/uptime-kuma)
  is a fancy self-hosted website/ip monitoring tool . `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Networking and Security
 - [DuckDNS](https://hub.docker.com/r/linuxserver/duckdns)
@@ -318,7 +318,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Traefik](https://hub.docker.com/_/traefik)
  is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Photos
 - [Chevereto](https://hub.docker.com/r/linuxserver/chevereto)
@@ -332,13 +332,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [PiWigo](https://hub.docker.com/r/linuxserver/piwigo)
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Recipe Management
 - [Mealie](https://hub.docker.com/r/hkotel/mealie)
  is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor. `Recommended`
  
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Security
 - [Authelia](https://hub.docker.com/r/authelia/authelia)
@@ -346,13 +346,13 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [VaultWarden](https://hub.docker.com/r/vaultwarden/server)
  is an alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients. `Recommended`
  
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Contributing
 - Submit a pull request.
 - Send a message or tag a group expert on Dockerholics.
 
-**[`^        back to top        ^`](#Dockerholics-Application-List)**
+**[`^        back to top        ^`](#dockerholics-application-list)**
 
 
 > If you like my work, you can make a donation to say thanks! [Buy me a coffee](https://www.paypal.com/paypalme/thanksmp)
