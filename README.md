@@ -13,6 +13,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
+  - [Backup](#backup)
   - [Business](#business)
   - [Collaboration and Synchronisation](#collaboration-and-synchronisation)
   - [Content Creation](#content-creation)
@@ -36,6 +37,11 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Recipe Management](#recipe-management)
   - [Security](#security)
   - [Contributing](#contributing)
+
+## Backup
+- [Borgmatic](https://github.com/modem7/docker-borgmatic)
+- [Duplicati](https://github.com/duplicati/duplicati)
+- [Duplicacy](https://github.com/gilbertchen/duplicacy)
 
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
