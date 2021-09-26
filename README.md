@@ -45,6 +45,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 - [Duplicacy](https://github.com/gilbertchen/duplicacy)
  Duplicacy is a new generation cross-platform cloud backup tool based on the idea of [Lock-Free Deduplication](https://github.com/gilbertchen/duplicacy/wiki/Lock-Free-Deduplication).
 
+**[`^        back to top        ^`](#Dockerholics-Application-List)**
+
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
  is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams.
