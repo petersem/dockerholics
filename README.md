@@ -1,5 +1,3 @@
-![Dockerholics](https://github.com/petersem/dockerholics/blob/main/assets/images/dockerholics-logo-blue.png?raw=true)
-
 ## Join the [Dockerholics](https://www.facebook.com/groups/205764024543769) community
 
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
