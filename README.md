@@ -13,7 +13,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
-  - [Backup](#backup)
   - [Business](#business)
   - [Collaboration and Synchronisation](#collaboration-and-synchronisation)
   - [Content Creation](#content-creation)
@@ -37,14 +36,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Recipe Management](#recipe-management)
   - [Security](#security)
   - [Contributing](#contributing)
-
-## Backup
-- [Borgmatic](https://github.com/modem7/docker-borgmatic)
- Borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
-- [Duplicati](https://github.com/duplicati/duplicati)
- Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers.
-- [Duplicacy](https://github.com/gilbertchen/duplicacy)
- Duplicacy is a new generation cross-platform cloud backup tool based on the idea of [Lock-Free Deduplication](https://github.com/gilbertchen/duplicacy/wiki/Lock-Free-Deduplication).
 
 ## Business
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
