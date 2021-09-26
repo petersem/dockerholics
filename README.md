@@ -1,5 +1,7 @@
-![Dockerholics](dockerholics-logo.png "Dockerholics")
+![Dockerholics](/assets/images/dockerholics-logo-blue.png "Dockerholics")
+
 ## Join the [Dockerholics](https://www.facebook.com/groups/205764024543769) community
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c56219e-2715-4b77-a93d-9638eaf231d0/deploy-status)](https://app.netlify.com/sites/dockerholics/deploys)
 
 # Docker [Application Templates](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to better learn about Docker-Compose. 
