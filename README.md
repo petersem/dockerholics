@@ -117,6 +117,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a community managed painless self-hosted Git service.
 - [Node-Red](https://hub.docker.com/r/nodered/node-red)
  is a low-code programming for event-driven applications
+- [Snippet-Box](https://hub.docker.com/r/pawelmalak/snippet-box)
+ is a simple self-hosted app for organizing your code snippets.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
