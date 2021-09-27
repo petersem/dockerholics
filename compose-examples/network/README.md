@@ -15,6 +15,10 @@ The following folders should be created
 - {docker}/proxymanager
 - {docker}/proxymanager/data
 - {docker}/proxymanager/letsencrypt
+- {docker}/pihole
+- {docker}/pihole/etc-pihole
+- {docker}/pihole/etc-dnsmasq.d
+
 > The above folders should be under your `docker` folder.
 
 ### Changes to .env file
@@ -24,3 +28,4 @@ Review the .env and update
 - PGID
 - All path values
 - Settings for Librespeed and Nginx Proxy Manager
+- Pi-hole settings
