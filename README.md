@@ -183,6 +183,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Finance
+- [BudgetZero](https://hub.docker.com/r/budgetzero/budgetzero)
+ budgetzero is a free, open-source, privacy-friendly, offline-first budgeting system. `Recommended` 
 - [Firefly III](https://hub.docker.com/r/fireflyiii/core)
  is a manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
 
