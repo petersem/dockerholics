@@ -34,6 +34,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Monitoring and Management](#monitoring-and-management)
   - [Networking and Security](#networking-and-security)
   - [Photos](#photos)
+  - [Planning](#planning)
   - [Recipe Management](#recipe-management)
   - [Security](#security)
   - [Contributing](#contributing)
