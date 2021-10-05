@@ -349,7 +349,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Recipe Management
-- [Mealie](https://hub.docker.com/r/sebazzz/pokertime)
+- [Mealie](https://hub.docker.com/r/hkotel/mealie)
  is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor. `Recommended`
  
 **[`^        back to top        ^`](#dockerholics-application-list)**
