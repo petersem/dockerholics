@@ -343,7 +343,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Planning
-- [Pokertime](https://hub.docker.com/r/linuxserver/chevereto)
+- [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
