@@ -218,6 +218,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Link Organisation
 - [DashMachine](https://hub.docker.com/r/rmountjoy/dashmachine)
  is another web application bookmark dashboard, with fun features.
+- [Flame](https://github.com/pawelmalak/flame)
+ Flame is self-hosted startpage for your server.
 - [Heimdall](https://hub.docker.com/r/linuxserver/heimdall)
  is a way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall.
 - [Homer](https://hub.docker.com/r/b4bz/homer)
