@@ -346,6 +346,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Planning
+- [Kanboard](https://hub.docker.com/r/kanboard/kanboard)
+ is a free and open source Kanban project management software.
 - [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
 
