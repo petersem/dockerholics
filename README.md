@@ -128,12 +128,14 @@ This is a list of free applications which can be hosted locally  in Docker conta
  monitors and restarts unhealthy docker containers. `Recommended`
 - [Dozzle](https://hub.docker.com/r/amir20/dozzle)
  is a small lightweight application with a web based interface to monitor Docker logs. It doesn’t store any log files. It is for live monitoring of your container logs only. `Recommended`
-- [Volume-Backup](https://hub.docker.com/r/loomchild/volume-backup)
- is a utility to backup and restore docker volumes.
+- [Diun](https://crazymax.dev/diun/)
+ receive notifications when a Docker image is updated on a Docker registry. `Recommended`
 - [Monocker](https://hub.docker.com/r/petersem/monocker)
  Monitor and alert on container state changes
 - [Portainer](https://hub.docker.com/r/portainer/portainer-ce)
  is a lightweight management UI which allows you to easily manage your Docker AND Kubernetes clusters. `Recommended`
+- [Volume-Backup](https://hub.docker.com/r/loomchild/volume-backup)
+ is a utility to backup and restore docker volumes.
 - [WatchTower](https://hub.docker.com/r/containrrr/watchtower)
  is a process for automating Docker container base image updates. `Recommended`
 
@@ -326,6 +328,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a self-hosted, lightweight speed test implemented in JavaScript, and based on Web Workers and XMLHttpRequest.
 - [Traefik](https://hub.docker.com/_/traefik)
  is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
+- [WireGuard](https://hub.docker.com/r/linuxserver/wireguard)
+ is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. . `Recommended`
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
