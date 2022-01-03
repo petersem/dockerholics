@@ -17,7 +17,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Business](#business)
   - [Collaboration and Synchronisation](#collaboration-and-synchronisation)
   - [Content Creation](#content-creation)
-  - [Databases](#databases)
+  - [Databases and Data Stores](#databases-and-data-stores)
   - [Development](#development)
   - [Docker](#docker)
   - [Document Management](#document-management)
@@ -91,15 +91,17 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
-## Databases
+## Databases and Data Stores
+- [Eclipse-Mosquitto](https://hub.docker.com/_/eclipse-mosquitto)
+ Eclipse Mosquitto is an open source message broker which implements MQTT.
+- [InfluxDB](https://hub.docker.com/_/influxdb)
+ is an open source time series database for recording metrics, events, and analytics. `Recommended`
 - [MariaDB](https://hub.docker.com/r/linuxserver/mariadb)
  is one of the most popular database servers. Made by the original developers of MySQL. `Recommended`
 - [MySQL](https://hub.docker.com/_/mysql)
  is a widely used, open-source relational database management system (RDBMS).
 - [MySQL Workbench](https://hub.docker.com/r/linuxserver/mysql-workbench)
  is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, and backup.
-- [InfluxDB](https://hub.docker.com/_/influxdb)
- is an open source time series database for recording metrics, events, and analytics. `Recommended`
 - [PHPMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
  is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.
 - [PostgreSQL](https://hub.docker.com/_/postgres/)
@@ -300,6 +302,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a webfront to live display the status of any webapp or service.
 - [NetData](https://hub.docker.com/r/netdata/netdata)
  is distributed, real-time, performance and health monitoring for systems and applications. `Recommended`
+- [OwntracksRecorder](https://hub.docker.com/r/owntracks/recorder)
+ is a lightweight program for storing and accessing location data published via MQTT (or HTTP) by the OwnTracks apps. `Recommended`
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 - [Telegraf](https://hub.docker.com/_/telegraf)
@@ -330,6 +334,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. `Recommended`
 - [WireGuard](https://hub.docker.com/r/linuxserver/wireguard)
  is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. . `Recommended`
+- [Zigbee2MQTT](https://hub.docker.com/r/koenkk/zigbee2mqtt)
+ Allows you to use your Zigbee devices without the vendors bridge/gateway. `Recommended`
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
