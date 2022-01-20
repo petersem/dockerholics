@@ -360,6 +360,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free and open source Kanban project management software.
 - [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
+- [Grocy](https://hub.docker.com/r/linuxserver/grocy)
+ is a web-based self-hosted groceries & household management solution for your home.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
