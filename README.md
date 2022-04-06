@@ -148,6 +148,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
 - [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
  Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ng.readthedocs.io/en/latest/) `Recommended`
+- [Reactive-Resume](https://hub.docker.com/r/amruthpillai/reactive-resume)
+ Reactive Resume is a free and open source resume builder that’s built to make the mundane tasks of creating, updating and sharing your resume easy. You can create multiple resumes, share them with recruiters through a unique link and print as PDF.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
