@@ -86,6 +86,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. (see github page for client/server install instructions)
 - [Languagetool](https://hub.docker.com/r/erikvl87/languagetool)
  is an Open Source proofreading software for English, French, German, Polish, Russian, and more than 20 other languages.
+- [Limesurvey](https://hub.docker.com/r/acspri/limesurvey)
+ is a free and open source on-line statistical survey web app.
+- [Wiznote](https://hub.docker.com/r/wiznote/wizserver)
+ is a cloud service that you could use to save your notes or share documents with your colleagues.
 - [Wordpress](https://hub.docker.com/_/wordpress)
  is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plugin architecture and a template system. `Recommended`
 
@@ -192,6 +196,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
  budgetzero is a free, open-source, privacy-friendly, offline-first budgeting system. `Recommended` 
 - [Firefly III](https://hub.docker.com/r/fireflyiii/core)
  is a manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. [Docs](https://docs.firefly-iii.org/) `Recommended` 
+- [Hammond](https://hub.docker.com/r/akhilrex/hammond)
+is a self hosted vehicle management system to track fuel and other expenses related to all of your vehicles. It supports multiple users sharing multiple vehicles.
+- [Openbudgeteer](https://hub.docker.com/r/axelander/openbudgeteer)
+is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB and Buckets. 
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -294,6 +302,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Monitoring and Management
 - [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io)
  lets you know when web pages change! Stay on top of new information!
+- [Glances](https://hub.docker.com/r/nicolargo/glances)
+ is a cross-platform monitoring tool which aims to present a maximum of information in a minimum of space.
 - [Grafana](https://hub.docker.com/r/grafana/grafana)
  Query, visualize, alert on, and understand your data no matter where it’s stored.
 - [HomeAssistant](https://hub.docker.com/r/homeassistant/home-assistant)
@@ -358,8 +368,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Planning
 - [Kanboard](https://hub.docker.com/r/kanboard/kanboard)
  is a free and open source Kanban project management software.
+- [Planka](https://hub.docker.com/r/meltyshev/planka)
+ is a Trello-like kanban board built with React and Redux
 - [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
+- [Taskcafe](https://hub.docker.com/r/taskcafe/taskcafe)
+ is a Kanban-style management tool
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
