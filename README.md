@@ -152,6 +152,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
 - [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
  Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ng.readthedocs.io/en/latest/) `Recommended`
+- [Reactive-Resume](https://hub.docker.com/r/amruthpillai/reactive-resume)
+ Reactive Resume is a free and open source resume builder that’s built to make the mundane tasks of creating, updating and sharing your resume easy. You can create multiple resumes, share them with recruiters through a unique link and print as PDF. [Docs](https://docs.rxresu.me)
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -372,8 +374,13 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a Trello-like kanban board built with React and Redux
 - [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
+<<<<<<< HEAD
 - [Taskcafe](https://hub.docker.com/r/taskcafe/taskcafe)
  is a Kanban-style management tool
+=======
+- [Grocy](https://hub.docker.com/r/linuxserver/grocy)
+ is a web-based self-hosted groceries & household management solution for your home.
+>>>>>>> 40615678864f153a6a43aa7c09bd28bb0ddd8ad8
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
