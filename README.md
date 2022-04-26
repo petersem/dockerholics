@@ -88,6 +88,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an Open Source proofreading software for English, French, German, Polish, Russian, and more than 20 other languages.
 - [Limesurvey](https://hub.docker.com/r/acspri/limesurvey)
  is a free and open source on-line statistical survey web app.
+- [Strapi](https://hub.docker.com/r/strapi/strapi)
+ is the leading open-source headless CMS.
 - [Wiznote](https://hub.docker.com/r/wiznote/wizserver)
  is a cloud service that you could use to save your notes or share documents with your colleagues.
 - [Wordpress](https://hub.docker.com/_/wordpress)
@@ -381,7 +383,10 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
 - [Grocy](https://hub.docker.com/r/linuxserver/grocy)
  is a web-based self-hosted groceries & household management solution for your home.
 >>>>>>> 40615678864f153a6a43aa7c09bd28bb0ddd8ad8
-
+- [Wekan](https://github.com/wekan/wekan)
+ open source Kanban 
+ `Recommended`
+ 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Recipe Management
