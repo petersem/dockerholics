@@ -370,19 +370,16 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Planning
+- [Grocy](https://hub.docker.com/r/linuxserver/grocy)
+ is a web-based self-hosted groceries & household management solution for your home.
 - [Kanboard](https://hub.docker.com/r/kanboard/kanboard)
  is a free and open source Kanban project management software.
 - [Planka](https://hub.docker.com/r/meltyshev/planka)
  is a Trello-like kanban board built with React and Redux
 - [Pokertime](https://hub.docker.com/r/sebazzz/pokertime)
  Remote planning poker tool built in ASP.NET Core and Blazor.
-<<<<<<< HEAD
 - [Taskcafe](https://hub.docker.com/r/taskcafe/taskcafe)
  is a Kanban-style management tool
-=======
-- [Grocy](https://hub.docker.com/r/linuxserver/grocy)
- is a web-based self-hosted groceries & household management solution for your home.
->>>>>>> 40615678864f153a6a43aa7c09bd28bb0ddd8ad8
 - [Wekan](https://github.com/wekan/wekan)
  open source Kanban 
  `Recommended`
