@@ -372,6 +372,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
 ## Planning
 - [Grocy](https://hub.docker.com/r/linuxserver/grocy)
  is a web-based self-hosted groceries & household management solution for your home.
+- [Focalboard](https://github.com/mattermost/focalboard)
+ is an open source, multilingual, self-hosted project management tool that's an alternative to Trello, Notion, and Asana.
 - [Kanboard](https://hub.docker.com/r/kanboard/kanboard)
  is a free and open source Kanban project management software.
 - [Planka](https://hub.docker.com/r/meltyshev/planka)
