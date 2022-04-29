@@ -50,6 +50,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Business
+- [LibreOffice](https://hub.docker.com/r/linuxserver/libreoffice)
+ is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
  is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams.
 - [Monica](https://hub.docker.com/_/monica)
