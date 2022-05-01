@@ -1,3 +1,9 @@
+# Extension fields
+x-env: &common_env
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TIME_ZONE
+      
 services:
   #
   # Prowlarr - index aggregator
@@ -8,10 +14,8 @@ services:
     ports:
       - 9696:9696
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
+      <<: *common_env
       - UMASK=002
-      - TZ=$TZ
     volumes:
       - $DOCKER_PATH/prowlarr:/config
     labels: 
@@ -35,9 +39,7 @@ services:
   radarr:
     environment:
       - UMASK_SET=22
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
     volumes:
       - $DOCKER_PATH/radarr:/config:rw
       - $MEDIA_PATH:/media:rw
@@ -69,9 +71,7 @@ services:
   sonarr:
     environment:
       - UMASK_SET=22
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
     volumes:
       - $DOCKER_PATH/sonarr:/config:rw
       - $MEDIA_PATH:/media:rw
@@ -101,9 +101,7 @@ services:
     image: linuxserver/lidarr:nightly
     container_name: lidarr
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
       - UMASK_SET=022 
     volumes:
       - $DOCKER_PATH/lidarr:/config
@@ -133,9 +131,7 @@ services:
     image: linuxserver/bazarr:development
     container_name: bazarr
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
       - UMASK_SET=022 #optional
     volumes:
       - $DOCKER_PATH/bazarr:/config
@@ -161,9 +157,7 @@ services:
     image: linuxserver/sabnzbd
     container_name: sabnzbd
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
     labels: 
       - autoheal=true
     healthcheck:
@@ -189,9 +183,7 @@ services:
     ports:
       - 8787:8787
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
     volumes:
       - $DOCKER_PATH/readarr:/config
       - $MEDIA_PATH:/media:rw
@@ -219,9 +211,7 @@ services:
     image: hotio/qbittorrent
     container_name: qbittorrent
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
       - UMASK_SET=022
     volumes:
       - $DOCKER_PATH/qbittorrent:/config

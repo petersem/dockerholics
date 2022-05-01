@@ -1,3 +1,9 @@
+# Extension fields
+x-env: &common_env
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TIME_ZONE
+
 services:
   # Poster
   posterr:
@@ -24,9 +30,7 @@ services:
       - PLEX_URL=$PURL
       - LIBRARY_FILTER=$LIBFILTER
 #      - ROOT_PATH=/
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
     depends_on:
       plex:
         condition: service_healthy
@@ -63,9 +67,7 @@ services:
     #   - "32413:32413/udp"
     #   - "32414:32414/udp"
     environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
+      <<: *common_env
       - HOSTNAME=$HOST_NAME
       - PLEX_CLAIM=$PLEX_CLAIM_TOKEN
       - ADVERTISE_IP=$ADVERTISE_IP
