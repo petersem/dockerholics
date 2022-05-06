@@ -60,7 +60,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Collaboration and Synchronisation
-- [FileRun](https://hub.docker.com/r/afian/filerun)
+- [FileRun](https://hub.docker.com/r/filerun/filerun)
  is a self-hosted Google Drive alternative. It is a full featured web based file manager with an easy to use user interface.
 - [FileBrowser](https://hub.docker.com/r/filebrowser/filebrowser)
  provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. `Recommended`
@@ -325,6 +325,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a lightweight program for storing and accessing location data published via MQTT (or HTTP) by the OwnTracks apps. `Recommended`
 - [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
+- [SmokePing](https://hub.docker.com/r/linuxserver/smokeping)
+ keeps track of your network latency.
 - [Telegraf](https://hub.docker.com/_/telegraf)
  is an agent for collecting metrics and writing them to InfluxDB or other outputs.
 - [Uptime Kuma](https://hub.docker.com/r/louislam/uptime-kuma)
