@@ -309,6 +309,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Monitoring and Management
+- [BabyBuddy](https://hub.docker.com/r/linuxserver/babybuddy)
+ tracks your baby's schedule and routine.
 - [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io)
  lets you know when web pages change! Stay on top of new information!
 - [Glances](https://hub.docker.com/r/nicolargo/glances)
