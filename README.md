@@ -50,6 +50,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Business
+- [Dolibarr](https://hub.docker.com/r/tuxgasy/dolibarr)
+ ERP & CRM is a modern software package to manage your organization's activity (contacts, suppliers, invoices, orders, stocks, agenda, etc.)
 - [LibreOffice](https://hub.docker.com/r/linuxserver/libreoffice)
  is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.
 - [Mattermost](https://hub.docker.com/r/mattermost/mattermost-team-edition)
