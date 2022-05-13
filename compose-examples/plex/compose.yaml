@@ -2,7 +2,7 @@
 x-env: &common_env
       - PUID=$PUID
       - PGID=$PGID
-      - TZ=$TIME_ZONE
+      - TZ=$TZ
 
 services:
   # Poster
@@ -16,7 +16,7 @@ services:
       - $DOCKER_PATH/posterr/config:/usr/src/app/config
     ports:
       - 9876:3000
-    restart: unless-stopped
+    restart: always
 
   # moviematch - allows two or more people to select movies to watch on plex
   moviematch:
@@ -29,7 +29,6 @@ services:
       - PLEX_TOKEN=$PLEX_TOKEN
       - PLEX_URL=$PURL
       - LIBRARY_FILTER=$LIBFILTER
-#      - ROOT_PATH=/
       <<: *common_env
     depends_on:
       plex:
