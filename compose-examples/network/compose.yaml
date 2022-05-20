@@ -8,7 +8,7 @@ services:
     environment:
       PUID: $PUID
       PGID: $PGID
-      TZ: $TIME_ZONE
+      TZ: $TZ
       DB_MYSQL_HOST: 'proxymanagerdb'
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: $NPMUSER
@@ -85,7 +85,7 @@ services:
     environment:
       - PUID=$PUID
       - PGID=$PGID
-      - TZ=$TIME_ZONE
+      - TZ=$TZ
       - PASSWORD=#LIBREPSW
     volumes:
       - $DOCKER_PATH/librespeed:/config
@@ -126,8 +126,8 @@ services:
       TEMPERATUREUNIT: c
       ADMIN_EMAIL: $GM_USER
     volumes:
-      - '$PERSIST/pihole/etc-pihole/:/etc/pihole'
-      - '$PERSIST/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d'
+      - '$DOCKER_PATH/pihole/etc-pihole/:/etc/pihole'
+      - '$DOCKER_PATH/pihole/etc-dnsmasq.d/:/etc/dnsmasq.d'
     labels: 
       autoheal: 'true'
     healthcheck:
