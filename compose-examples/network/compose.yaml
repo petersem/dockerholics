@@ -1,9 +1,3 @@
-# Extension fields
-x-env: &common_env
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TIME_ZONE
-
 services:
   #
   # Proxymanager - Nginx Proxy Manager
@@ -12,7 +6,9 @@ services:
     container_name: proxymanager
     image: jc21/nginx-proxy-manager
     environment:
-      <<: *common_env
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TIME_ZONE
       DB_MYSQL_HOST: 'proxymanagerdb'
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: $NPMUSER
@@ -87,7 +83,9 @@ services:
     image: linuxserver/librespeed
     container_name: librespeed
     environment:
-      <<: *common_env
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TIME_ZONE
       - PASSWORD=#LIBREPSW
     volumes:
       - $DOCKER_PATH/librespeed:/config
