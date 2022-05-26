@@ -1,0 +1,199 @@
+services:
+  esphome:
+    container_name: esphome
+    restart: always
+    image: esphome/esphome
+    volumes:
+      - $DOCKER_PATH/homeassistant/esphome:/config
+    network_mode: host
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+  #  devices:
+  #    - /dev/ttyUSB0:/dev/ttyUSB0
+    labels: 
+      autoheal: "true"
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:6052 || exit 1
+      start_period: 90s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+
+  homeassistant:
+    container_name: homeassistant
+    restart: always
+    image: homeassistant/home-assistant
+    #devices:
+      # - /dev/ttyUSB0:/dev/ttyUSB0
+      # - /dev/ttyUSB1:/dev/ttyUSB1
+      # - /dev/ttyACM0:/dev/ttyACM0
+    volumes:
+      - $DOCKER_PATH/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    network_mode: host
+    #ports:
+    #  - "8123:8123"
+    #  - "1400:1400"
+    privileged: true
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    depends_on:
+      homeassistantdb:
+        condition: service_healthy
+      esphome:
+        condition: service_healthy
+      zigbee2mqtt:
+        condition: service_healthy
+      mqtt:
+        condition: service_started
+      ducknds:
+        condition: service_started
+    labels: 
+      autoheal: "true"
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8123 || exit 1
+      start_period: 90s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+
+  homeassistantdb:
+    image: linuxserver/mariadb:alpine
+    container_name: homeassistantdb
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - MYSQL_ROOT_PASSWORD=$HA_DB_ROOT_PSW
+      - MYSQL_DATABASE=$HA_DB
+      - MYSQL_USER=$HA_DB_USER
+      - MYSQL_PASSWORD=$HA_DB_PSW
+    ports:
+      - 8306:3306
+    volumes:
+      - $DOCKER_PATH/homeassistantdb:/config
+    labels: 
+      autoheal: "true"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "--silent"]
+    restart: always
+
+  mqtt:
+    image: eclipse-mosquitto
+    container_name: mqtt
+    ports:
+      - 1883:1883
+      - 8883:8883
+    volumes:
+      - $DOCKER_PATH/mqtt/data:/mosquitto/data
+      - $DOCKER_PATH/mqtt/logs:/mosquitto/log
+      - $DOCKER_PATH/mqtt/config:/mosquitto/config
+
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    restart: unless-stopped
+    image: koenkk/zigbee2mqtt
+    volumes:
+      - $DOCKER_PATH/zigbee2mqtt/zigbee2mqtt-data:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      - 6080:8080
+    environment:
+      - TZ=$TZ
+    # devices:
+    #   - /dev/ttyUSB0:/dev/ttyUSB0
+    depends_on:
+      - mqtt
+    labels: 
+      autoheal: "true"
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:6080 || exit 1
+      start_period: 90s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+
+  code-server:
+    image: ghcr.io/linuxserver/code-server
+    container_name: code-server
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - PASSWORD=$CODE_SERVER_PSW
+      # optional settinga
+      #- HASHED_PASSWORD= #optional
+      #- SUDO_PASSWORD=password #optional
+      #- SUDO_PASSWORD_HASH= #optional
+      #- PROXY_DOMAIN=code-server.$DOMAIN
+      
+    volumes:
+      - $DOCKER_PATH/vscode:/config
+      - $CODE:/code
+    ports:
+      - 5443:8443
+    restart: unless-stopped
+
+  nodered:
+    image: nodered/node-red
+    container_name: nodered
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+    volumes:
+      - $DOCKER_PATH/nodered:/data
+    ports:
+      - 1880:1880
+    labels: 
+      - autoheal="true"
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:1880 || exit 1
+      start_period: 90s
+      timeout: 10s
+      interval: 5s
+      retries: 3
+    restart: unless-stopped
+
+  duckdns:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - SUBDOMAINS=$DUCKSUBDOMS
+      - TOKEN=$DUCKTOKEN
+      - LOG_FILE=true #optional
+    volumes:
+      - $DOCKER_PATH/duckdns:/config #optional - use if log_file true
+    restart: unless-stopped
+
+  frigate:
+    container_name: frigate
+    privileged: true # this may not be necessary for all setups
+    restart: unless-stopped
+    image: blakeblackshear/frigate:stable-amd64
+    shm_size: "20mb" # update for your cameras based on calculation above
+    devices:
+      #- /dev/bus/usb:/dev/bus/usb # passes the USB Coral, needs to be modified for other versions
+      #- /dev/apex_0:/dev/apex_0 # passes a PCIe Coral, follow driver instructions here https://coral.ai/docs/m2/get-started/#2a-on-linux
+      - /dev/dri/renderD128 # for intel hwaccel, needs to be updated for your hardware
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $DOCKER_PATH/frigate/config.yml:/config/config.yml:ro
+      - $MEDIA_CAMERA_PATH:/media/frigate
+      - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
+        target: /tmp/cache
+        tmpfs:
+          size: 1000000000
+    ports:
+      - "5151:5000"
+      - "1935:1935" # RTMP feeds
+    environment:
+      FRIGATE_RTSP_PASSWORD: $FRIGATE_RTSP_PASSWORD
