@@ -20,12 +20,13 @@ This will install as-is, however best with OpenVPN/Wireguard/Another VPN?
 
 ### Folders
 The following folders should be created
+- {downloads}
+> - {downloads}/complete
+> - {downloads}/incomplete
 - {docker}
 > - /c/docker (on windows)
 > - ~/docker (on linux)
 > - /volume1/docker (on Synology)
-- *somewhere*/downloads
-- *somewhere*/incomplete
 > These above folders are for partial and completed downloads. Put them under a folder wherever you wish.
 - cd {docker}/prowlarr
 - cd {docker}/sonarr
