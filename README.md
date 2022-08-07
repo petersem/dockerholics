@@ -8,7 +8,7 @@ Use these to kick-start your installs.
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
 - [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
-- [Linux Aliases](https://github.com/petersem/dockerholics/blob/main/.bashrc)
+- [Linux Aliases](https://raw.githubusercontent.com/petersem/dockerholics/main/.bashrc)
 
 # Dockerholics Application List
 This is a list of free applications which can be hosted locally  in Docker containers. These are images that the group experts have tried out and verified.
