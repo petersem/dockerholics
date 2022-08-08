@@ -1,0 +1,173 @@
+services:
+  # White Board Online
+  wbo:
+    image: lovasoa/wbo
+    container_name: wbo
+    ports:
+      - 5005:80
+    volumes:
+      - $PERSIST/wbo:/opt/app/server-data" 
+    restart: unless-stopped
+
+  # file browser - web-based file browser/manager
+  filebrowser:
+    container_name: filebrowser
+    volumes:
+      - $MEDIA_PATH:/srv
+      - $PERSIST/filebrowser/filebrowser.db:/database.db
+      - $PERSIST/filebrowser/.filebrowser.json:/.filebrowser.json
+    environment:
+      user: "$PUID:$PGID"
+    ports:
+      - 6543:80
+    image: filebrowser/filebrowser
+
+  # Joplin
+  joplin:
+    container_name: joplin
+    image: joplin/server:latest
+    depends_on:
+        - joplindb
+    ports:
+        - "2230:2230"
+    restart: unless-stopped
+    environment:
+        - APP_PORT=2230
+        - APP_BASE_URL=http://joplin.$DOMAIN
+        - DB_CLIENT=pg
+        - POSTGRES_PASSWORD=joplinpsw
+        - POSTGRES_DATABASE=joplin
+        - POSTGRES_USER=joplinuser
+        - POSTGRES_PORT=5432
+        - POSTGRES_HOST=joplindb
+
+  joplindb:
+    container_name: joplindb
+    image: postgres:13.1
+    volumes:
+        - $PERSIST/joplindb:/var/lib/postgresql/data
+  #  ports:
+   #     - "5435:5432"
+    restart: unless-stopped
+    environment:
+        - POSTGRES_PASSWORD=joplinpsw
+        - POSTGRES_USER=joplinuser
+        - POSTGRES_DB=joplin
+
+  # Mealie
+  mealie:
+    container_name: mealie
+    image: hkotel/mealie:latest
+    restart: unless-stopped
+    ports:
+      - 9925:80
+    environment:
+      TZ: $TZ
+    volumes:
+      - $PERSIST/mealie/data/:/app/data
+    labels: 
+      autoheal: true
+    networks:
+      - external
+
+  # Vaultwarden Password Manager
+  vaultwarden:
+    container_name: vaultwarden
+    image: vaultwarden/server
+    restart: always
+    volumes:
+      - $DOCKER_PATH/vaultwarden/data:/data
+      - $DOCKER_PATH/vaultwarden/ssl:/ssl
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8089:8089
+      - 3012:3012
+    user: $PUID:$PGID
+    environment:
+      - LOG_FILE=/data/vaultwarden.log
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      #- SIGNUPS_ALLOWED=true
+      - SIGNUPS_ALLOWED=false
+      - INVITATIONS_ALLOWED=true
+      - LOG_LEVEL=warn
+      - EXTENDED_LOGGING=true
+      - DOMAIN=https://bw.$DOMAINNAME
+      - ROCKET_PORT=8089
+      - WEBSOCKET_ENABLED=true
+      - ADMIN_TOKEN=$BW_TOKEN__SECRET
+      - SMTP_HOST=$GM_SERVER
+      - SMTP_FROM=$GM_USER__SECRET
+      - SMTP_PORT=$GM_PORT
+      - SMTP_SSL=true
+      - SMTP_USERNAME=$GM_USER__SECRET
+      - SMTP_PASSWORD=$GM_PSW__SECRET
+
+  # Syncthing
+  syncthing: 
+    container_name: syncthing
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TZ
+      - UMASK_SET=022
+    volumes:
+      - $DOCKER_PATH/syncthing/config:/config
+      - $DOCKER_PATH/syncthing/data1:/data1
+      - $DOCKER_PATH/syncthing/data2:/data2
+    ports:
+      - 8384:8384
+      - 22000:22000
+      - 21027:21027/udp
+    image: linuxserver/syncthing
+    restart: unless-stopped
+
+  # Hastebin Redis Cache
+  hastebin:
+    container_name: hastebin
+    image: rlister/hastebin
+    environment:
+      STORAGE_TYPE: redis
+      STORAGE_HOST: hastebinredis
+    ports:
+     - 7777:7777
+    restart: unless-stopped
+    depends_on:
+      hastebinredis: 
+        condition: service_healthy
+    labels: 
+      autoheal: true
+    healthcheck:
+      test: wget -s http://127.0.0.1:7777 || exit 1
+      start_period: 10s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+
+  # Hastebin Redis Cache
+  hastebinredis:
+    container_name: hastebinredis
+    image: redis
+    volumes:
+      - $DOCKER_PATH/hastebinredis:/data
+    entrypoint: redis-server --appendonly yes
+    labels: 
+      autoheal: true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli","ping"]
+      start_period: 10s
+      timeout: 5s
+      interval: 5s
+      retries: 3
+
+  # hasy paste
+  hastypaste:
+    container_name: hastypaste
+    image: ghcr.io/enchant97/hasty-paste:1
+    restart: unless-stopped
+    volumes:
+      - $PERSIST/hastypaste:/app/data
+    ports:
+      - 8069:8000
