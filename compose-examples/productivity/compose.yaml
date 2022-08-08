@@ -67,8 +67,6 @@ services:
       - $DOCKER_PATH/mealie/data/:/app/data
     labels: 
       autoheal: true
-    networks:
-      - external
 
   # Vaultwarden Password Manager
   vaultwarden:
