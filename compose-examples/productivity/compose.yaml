@@ -6,7 +6,7 @@ services:
     ports:
       - 5005:80
     volumes:
-      - $PERSIST/wbo:/opt/app/server-data" 
+      - $DOCKER_PATH/wbo:/opt/app/server-data" 
     restart: unless-stopped
 
   # file browser - web-based file browser/manager
@@ -14,8 +14,8 @@ services:
     container_name: filebrowser
     volumes:
       - $MEDIA_PATH:/srv
-      - $PERSIST/filebrowser/filebrowser.db:/database.db
-      - $PERSIST/filebrowser/.filebrowser.json:/.filebrowser.json
+      - $DOCKER_PATH/filebrowser/filebrowser.db:/database.db
+      - $DOCKER_PATH/filebrowser/.filebrowser.json:/.filebrowser.json
     environment:
       user: "$PUID:$PGID"
     ports:
@@ -45,7 +45,7 @@ services:
     container_name: joplindb
     image: postgres:13.1
     volumes:
-        - $PERSIST/joplindb:/var/lib/postgresql/data
+        - $DOCKER_PATH/joplindb:/var/lib/postgresql/data
   #  ports:
    #     - "5435:5432"
     restart: unless-stopped
@@ -64,7 +64,7 @@ services:
     environment:
       TZ: $TZ
     volumes:
-      - $PERSIST/mealie/data/:/app/data
+      - $DOCKER_PATH/mealie/data/:/app/data
     labels: 
       autoheal: true
     networks:
@@ -168,6 +168,31 @@ services:
     image: ghcr.io/enchant97/hasty-paste:1
     restart: unless-stopped
     volumes:
-      - $PERSIST/hastypaste:/app/data
+      - $DOCKER_PATH/hastypaste:/app/data
     ports:
       - 8069:8000
+
+  # SearNGX
+  searxng:
+    container_name: searxng
+    image: searxng/searxng:latest
+    networks:
+      - external
+    ports:
+     - "5080:8080"
+    volumes:
+      - $DOCKER_PATH/searxng:/etc/searxng:rw
+    environment:
+      - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
