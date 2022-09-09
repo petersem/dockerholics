@@ -221,6 +221,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a multi-player network client for the OpenRA game
 - [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
  Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
+- [Minecraft Server](https://hub.docker.com/r/itzg/minecraft-server)
+ is a docker image that can run a minecraft server which automatically runs the selected version. It also supports mods and other server customizations. [Docs](https://github.com/itzg/docker-minecraft-server#readme) 
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
