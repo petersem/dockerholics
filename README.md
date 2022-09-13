@@ -70,6 +70,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. `Recommended`
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
+- [Hastypaste](https://github.com/enchant97/hasty-paste)
+ is a fast and minimal paste bin, written in Python using Quart. `Recommended` 
 - [NextCloud](https://hub.docker.com/_/nextcloud)
  is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)

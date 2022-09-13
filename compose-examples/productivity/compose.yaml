@@ -160,11 +160,15 @@ services:
       interval: 5s
       retries: 3
 
-  # hasy paste
+  # hasty paste
   hastypaste:
     container_name: hastypaste
     image: ghcr.io/enchant97/hasty-paste:1
     restart: unless-stopped
+    environment:
+      NEW_AT_INDEX: "true"
+      DEFAULT_USE_LONG_ID: "false"
+      ENABLE_PUBLIC_LIST: "true"
     volumes:
       - $DOCKER_PATH/hastypaste:/app/data
     ports:
