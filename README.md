@@ -74,6 +74,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is a fast and minimal paste bin, written in Python using Quart. `Recommended` 
 - [NextCloud](https://hub.docker.com/_/nextcloud)
  is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
+- [Picoshare](https://github.com/mtlynch/picoshare)
+ is a minimalist service that allows you to share files, or simple text pastes, easily.  `Recommended`
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
  is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
