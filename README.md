@@ -303,6 +303,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
 - [Overseerr](https://hub.docker.com/r/sctx/overseerr)
  is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex! `Recommended`
+- [Plex-Meta-Manager](https://github.com/meisnate12/Plex-Meta-Manager)
+ eases the creation and maintenance of metadata, collections, and playlists within a Plex Media Server
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  is a media poster display for Plex, Sonarr, and Radarr
 - [Reqestrr](https://hub.docker.com/r/linuxserver/requestrr)
