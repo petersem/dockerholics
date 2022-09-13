@@ -199,8 +199,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## E-books
+- [Audiobookshelf](https://www.audiobookshelf.org/)
+ is a self-hosted audiobook and podcast server
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
- is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
+ is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. `Recommended`
 - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
 - [Cops](https://hub.docker.com/r/linuxserver/cops)
