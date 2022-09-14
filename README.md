@@ -25,8 +25,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Document Management](#document-management)
   - [Downloading and Searching](#downloading-and-searching)
   - [E-books](#e-books)
+  - [Entertainment](#entertainment)
   - [Finance](#finance)
-  - [Gaming](#gaming)
   - [Information Sharing](#information-sharing)
   - [Internet](#internet)
   - [Link Organisation](#link-organisation)
@@ -210,6 +210,16 @@ This is a list of free applications which can be hosted locally  in Docker conta
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
+## Entertainment
+- [OpenRA](https://hub.docker.com/r/rmoriz/openra)
+ is a multi-player network client for the OpenRA game
+- [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
+ Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
+- [Rickroll](https://hub.docker.com/r/modem7/docker-rickroll)
+ is a self-hosted, self-contained Rickroll container
+
+**[`^        back to top        ^`](#dockerholics-application-list)**
+
 ## Finance
 - [BudgetZero](https://hub.docker.com/r/budgetzero/budgetzero)
  budgetzero is a free, open-source, privacy-friendly, offline-first budgeting system. `Recommended` 
@@ -219,14 +229,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 is a self hosted vehicle management system to track fuel and other expenses related to all of your vehicles. It supports multiple users sharing multiple vehicles.
 - [Openbudgeteer](https://hub.docker.com/r/axelander/openbudgeteer)
 is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB and Buckets. 
-
-**[`^        back to top        ^`](#dockerholics-application-list)**
-
-## Gaming
-- [OpenRA](https://hub.docker.com/r/rmoriz/openra)
- is a multi-player network client for the OpenRA game
-- [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
- Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -255,6 +257,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is self-hosted startpage for your server. `Recommended`
 - [Heimdall](https://hub.docker.com/r/linuxserver/heimdall)
  is a way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall.
+- [Homarr](https://github.com/ajnart/homarr)
+ is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
 - [Homer](https://hub.docker.com/r/b4bz/homer)
  is a dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
