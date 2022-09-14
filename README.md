@@ -245,6 +245,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a web IRC client that you host on your own server.
 - [NginX](https://hub.docker.com/_/nginx)
  is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server.
+- [Searxng](https://github.com/searxng/searxng-docker)
+ is a privacy-respecting, hackable metasearch engine `Recommended`
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
  
