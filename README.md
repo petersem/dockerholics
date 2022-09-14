@@ -333,6 +333,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  tracks your baby's schedule and routine.
 - [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io)
  lets you know when web pages change! Stay on top of new information!
+- [Frigate](https://hub.docker.com/r/blakeblackshear/frigate)
+ is an NVR With Realtime Object Detection for IP Cameras
 - [Glances](https://hub.docker.com/r/nicolargo/glances)
  is a cross-platform monitoring tool which aims to present a maximum of information in a minimum of space.
 - [Grafana](https://hub.docker.com/r/grafana/grafana)
