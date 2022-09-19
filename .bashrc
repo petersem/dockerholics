@@ -1,17 +1,17 @@
 # run 'source ~/.bashrc' to load latest changes in current session
 
 # ALIASES #####################################################
-# Note that these aliases do not use the latest docker compose cli commands as Synology docker is a number of versions behind.
+# Note that these aliases do not work Synology docker, as they are a number of versions behind. (cheanhe "docker compose" to "docker-compose" and then it should work)
 # If you are running the latest Docker engine on linux, then substitute 'docker-compose' for 'docker compose'
 
 # Set docker aliases
 alias cdkr='cd /volume1/docker'
 alias list='docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Status}}" | (read -r; printf "%s\n" "$REPLY"; sort -k 1 )'
-alias down='docker-compose down -v'
-alias pull='docker-compose pull'
-alias up='docker-compose up -d'
+alias down='docker compose down -v'
+alias pull='docker compose pull'
+alias up='docker compose up -d'
 alias inspect='docker inspect'
-alias create='docker-compose up --no-start'
+alias create='docker compose up --no-start'
 alias stop='docker stop'
 alias start='docker start'
 alias prune='docker system prune -a --volumes'
