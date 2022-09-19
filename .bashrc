@@ -1,7 +1,7 @@
 # run 'source ~/.bashrc' to load latest changes in current session
 
 # ALIASES #####################################################
-# Note that these aliases do not work on Synology docker, due to the fact that they are a number of versions behind. (cheange "docker compose" to "docker-compose" and then it should work)
+# Note that these aliases do not work on Synology docker, due to the fact that they are a number of versions behind. (change "docker compose" to "docker-compose" and then it should work)
 # If you are running the latest Docker engine on linux, then substitute 'docker-compose' for 'docker compose'
 
 # Set docker aliases
