@@ -6,9 +6,10 @@ Use these to kick-start your installs.
 - [Books](https://github.com/petersem/dockerholics/tree/main/compose-examples/books)
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
 - [Download](https://github.com/petersem/dockerholics/tree/main/compose-examples/download)
+- [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
-- [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
+
 - [Linux Aliases](https://raw.githubusercontent.com/petersem/dockerholics/main/.bashrc)
 
 # Dockerholics Application List

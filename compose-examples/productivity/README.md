@@ -4,7 +4,6 @@
 >  
 
 This will install and create containers for the following apps
-- Hastebin
 - Hasty Paste
 - Paperless NGX
 - Joplin
