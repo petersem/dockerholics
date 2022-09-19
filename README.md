@@ -3,6 +3,7 @@ Join our community [here](https://www.facebook.com/groups/205764024543769)
 
 # Docker Compose [Examples](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to kick-start your installs. 
+- [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/books)
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
 - [Download](https://github.com/petersem/dockerholics/tree/main/compose-examples/download)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
