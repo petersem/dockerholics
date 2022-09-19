@@ -121,45 +121,6 @@ services:
     image: linuxserver/syncthing
     restart: unless-stopped
 
-  # Hastebin Redis Cache
-  hastebin:
-    container_name: hastebin
-    image: rlister/hastebin
-    environment:
-      STORAGE_TYPE: redis
-      STORAGE_HOST: hastebinredis
-    ports:
-     - 7777:7777
-    restart: unless-stopped
-    depends_on:
-      hastebinredis: 
-        condition: service_healthy
-    labels: 
-      autoheal: true
-    healthcheck:
-      test: wget -s http://127.0.0.1:7777 || exit 1
-      start_period: 10s
-      timeout: 5s
-      interval: 5s
-      retries: 3
-
-  # Hastebin Redis Cache
-  hastebinredis:
-    container_name: hastebinredis
-    image: redis
-    volumes:
-      - $DOCKER_PATH/hastebinredis:/data
-    entrypoint: redis-server --appendonly yes
-    labels: 
-      autoheal: true
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli","ping"]
-      start_period: 10s
-      timeout: 5s
-      interval: 5s
-      retries: 3
-
   # hasty paste
   hastypaste:
     container_name: hastypaste
