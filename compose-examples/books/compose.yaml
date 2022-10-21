@@ -47,6 +47,7 @@ services:
       - PGID=$PGID
       - KEEP_APP_RUNNING=1
       - TZ=$TIME_ZONE
+      - DISABLE_AUTH='true'
     volumes:
       - $DOCKER_PATH//calibre/config:/config
       - $MEDIA_PATH/ebooks:/books:rw
