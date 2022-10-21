@@ -11,7 +11,7 @@ This will install and create containers for the following apps
 - DuckDNS
 
 ## Prerequisites
-This will install as-is, however best with OpenVPN (for qbittorrent), Portainer, and Watchtower
+This will install as-is, however best with, Portainer (simple management), and Watchtower (updates)
 
 ### Folders
 The following folders should be created
