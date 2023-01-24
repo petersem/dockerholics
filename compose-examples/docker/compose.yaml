@@ -8,6 +8,7 @@ services:
     environment:
       - AUTOHEAL_CONTAINER_LABEL=all
       - TZ=$TZ
+      - WATCHTOWER_WARN_ON_HEAD_FAILURE=never
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
     image: willfarrell/autoheal
