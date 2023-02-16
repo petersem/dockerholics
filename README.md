@@ -371,6 +371,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt. `Recommended`
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
  is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. `Recommended`
+- [Orbital-sync](https://github.com/mattwebbio/orbital-sync)
+ synchronizes multiple Pi-hole instances for high availability (HA) using the built-in "teleporter". `Recommended`
 - [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
  uses Docker to run Pi-Hole with an upstream Unbound resolver `Recommended`
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
