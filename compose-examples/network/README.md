@@ -1,8 +1,10 @@
 # Network - networking stack
 This will install and create containers for the following apps
-- Nginx Proxy Manager
+- Nginx Proxy Manager (reverse proxy)
 - openVPN (Requires configuration once created)
-- LibreSpeed
+- LibreSpeed (internal speed test)
+- Pi-Hole with Unbound (ad blocking)
+- Orbital-sync (Pi-hole primary to secondary sync)
 
 ### Folders
 The following folders should be created
@@ -29,3 +31,4 @@ Review the .env and update
 - All path values
 - Settings for Librespeed and Nginx Proxy Manager
 - Pi-hole settings
+- Orbital-sync settings
