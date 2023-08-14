@@ -217,8 +217,8 @@ services:
         - $DOCKER_PATH/languagetool:/ngrams
     restart: unless-stopped
     healthcheck:
-      test: curl -d "text=This is an test." -d "language=auto" http://localhost:8010/v2/check > /dev/null || exit 1
-      start_period: 20s
+      test: curl -d "text=Color atomize" -d "language=en-AU" http://localhost:8010/v2/check > /dev/null || exit 1
+      start_period: 25s
       timeout: 5s
       interval: 10s
       retries: 3
