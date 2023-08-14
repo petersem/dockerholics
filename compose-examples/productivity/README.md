@@ -7,7 +7,7 @@ This will install and create containers for the following apps
 - Hasty Paste
 - Paperless NGX
 - Joplin
-- Flame
+- Homepage
 - Languagetool
 - WhiteBoardOnline
 - Filebrowser
@@ -32,7 +32,10 @@ The following folders should be created
 - {docker}/filebrowser
 - {docker}/wbo
 - {docker}/languagetool
-- {docker}/flame
+- {docker}/homepage
+- {docker}/homepage/images
+- {docker}/homepage/icons
+- {docker}/linkding
 - 
 > The above folder should be under your `docker` folder.
 

@@ -1,4 +1,43 @@
 services:
+  # Glances - system monitoring
+  glances:
+    container_name: glances
+    ports:
+      - 61208-61209:61208-61209
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - GLANCES_OPT=-w
+    restart: always
+    pid: host
+    image: nicolargo/glances
+
+  # Homepage dashboard
+  homepage:
+    image: ghcr.io/benphelps/homepage:latest
+    container_name: homepage
+    ports:
+      - 3344:3000
+    volumes:
+      - $DOCKER_PATH/homepage:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations, see alternative methods
+      - $DOCKER_PATH/homepage/images:/app/public/images
+      - $DOCKER_PATH/homepage/icons:/app/public/icons
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+    restart: unless-stopped
+
+  # link manager
+  linkding:
+    image: sissbruecker/linkding
+    container_name: linkding
+    ports:
+      - 9999:9090
+    volumes:
+      - $DOCKER_PATH/linkding:/etc/linkding/data
+    restart: unless-stopped
+
   # White Board Online
   wbo:
     image: lovasoa/wbo
@@ -91,16 +130,16 @@ services:
       - INVITATIONS_ALLOWED=true
       - LOG_LEVEL=warn
       - EXTENDED_LOGGING=true
-      - DOMAIN=https://bw.$DOMAINNAME
+      - DOMAIN=https://vw.$DOMAIN
       - ROCKET_PORT=8089
       - WEBSOCKET_ENABLED=true
-      - ADMIN_TOKEN=$BW_TOKEN__SECRET
+      - ADMIN_TOKEN=$BW_TOKEN
       - SMTP_HOST=$GM_SERVER
-      - SMTP_FROM=$GM_USER__SECRET
+      - SMTP_FROM=$GM_USER
       - SMTP_PORT=$GM_PORT
       - SMTP_SSL=true
-      - SMTP_USERNAME=$GM_USER__SECRET
-      - SMTP_PASSWORD=$GM_PSW__SECRET
+      - SMTP_USERNAME=$GM_USER
+      - SMTP_PASSWORD=$GM_PSW
 
   # Syncthing
   syncthing: 
@@ -159,3 +198,27 @@ services:
       options:
         max-size: "1m"
         max-file: "1"
+
+  # Languagetool - self-host spell checker
+  languagetool:
+    image: erikvl87/languagetool
+    container_name: languagetool
+    ports:
+        - 8018:8010  # Using default port from the image
+    labels:
+      autoheal: 'true'
+    networks:
+      - external
+    environment:
+        - langtool_languageModel=/ngrams  # OPTIONAL: Using ngrams data
+        - Java_Xms=256m  # OPTIONAL: Setting a minimal Java heap size of 512 mib
+        - Java_Xmx=512m  # OPTIONAL: Setting a maximum Java heap size of 1 Gib
+    volumes:
+        - $DOCKER_PATH/languagetool:/ngrams
+    restart: unless-stopped
+    healthcheck:
+      test: curl -d "text=This is an test." -d "language=auto" http://localhost:8010/v2/check > /dev/null || exit 1
+      start_period: 20s
+      timeout: 5s
+      interval: 10s
+      retries: 3

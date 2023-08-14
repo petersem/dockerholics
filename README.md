@@ -265,8 +265,11 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
 - [Homer](https://hub.docker.com/r/b4bz/homer)
  is a dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
+- [Linkding](https://hub.docker.com/r/sissbruecker/linkding)
+ is a simple bookmark service that you can host yourself
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
+
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 

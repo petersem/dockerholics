@@ -9,45 +9,14 @@ services:
       PUID: $PUID
       PGID: $PGID
       TZ: $TZ
-      DB_MYSQL_HOST: 'proxymanagerdb'
-      DB_MYSQL_PORT: 3306
-      DB_MYSQL_USER: $NPMUSER
-      DB_MYSQL_PASSWORD: $NPMPSW
-      DB_MYSQL_NAME: 'npm'
     ports:
-      - 880:80 
-      - 881:81
-      - 843:443 
+      - 82:80 
+      - 81:81
+      - 43:443 
     volumes:
       - $DOCKER_PATH/proxymanager/data:/data
       - $DOCKER_PATH/proxymanager/letsencrypt:/etc/letsencrypt
     restart: always
-    depends_on:
-      proxymanagerdb:
-        condition: service_healthy
-
-  #
-  # Proxymanagerdb - MariaDB database for Nginx Proxy Manager
-  #      
-  proxymanagerdb:
-    container_name: proxymanagerdb
-    image: ghcr.io/linuxserver/mariadb
-    environment:
-      MYSQL_ROOT_PASSWORD: $NPMROOT
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: $NPMUSER
-      MYSQL_PASSWORD: $NPMPSW
-    volumes:
-      - $DOCKER_PATH/proxymanagerdb:/config
-    restart: always
-    labels:
-      - autoheal=true
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "--silent"] 
-      start_period: 240s
-      timeout: 10s
-      interval: 5s
-      retries: 3
 
   #
   # vpn - openVPN client container
