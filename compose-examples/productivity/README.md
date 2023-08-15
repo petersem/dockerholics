@@ -1,7 +1,4 @@
 # Productivity - app stack
->  
-> THIS STACK NOT IMPLEMENTED YET!!
->  
 
 This will install and create containers for the following apps
 - Hasty Paste
@@ -39,7 +36,7 @@ The following folders should be created
 - {docker}/homepage/icons
 - {docker}/linkding
 - {docker}/opengist
-- 
+ 
 > The above folder should be under your `docker` folder.
 
 ### Changes to .env file
