@@ -13,6 +13,7 @@ This will install and create containers for the following apps
 - VaultWarden
 - Syncthing
 - Opengist
+- Glances
 - Linkding
 
 
