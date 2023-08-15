@@ -9,6 +9,7 @@ Use these to kick-start your installs.
 - [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
+- [Productivity](https://github.com/petersem/dockerholics/tree/main/compose-examples/productivity)
 
 - [Linux Aliases](https://raw.githubusercontent.com/petersem/dockerholics/main/.bashrc)
 
