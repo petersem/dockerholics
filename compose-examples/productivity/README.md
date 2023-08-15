@@ -15,6 +15,8 @@ This will install and create containers for the following apps
 - DrawIO
 - VaultWarden
 - Syncthing
+- Opengist
+- Linkding
 
 
 ## Prerequisites
@@ -36,6 +38,7 @@ The following folders should be created
 - {docker}/homepage/images
 - {docker}/homepage/icons
 - {docker}/linkding
+- {docker}/opengist
 - 
 > The above folder should be under your `docker` folder.
 

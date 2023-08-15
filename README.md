@@ -100,6 +100,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an Open Source proofreading software for English, French, German, Polish, Russian, and more than 20 other languages.
 - [Limesurvey](https://hub.docker.com/r/acspri/limesurvey)
  is a free and open source on-line statistical survey web app.
+- [Opengist](https://github.com/thomiceli/opengist#with-docker)
+ is a self-hosted pastebin powered by Git.
 - [Strapi](https://hub.docker.com/r/strapi/strapi)
  is the leading open-source headless CMS.
 - [Wiznote](https://hub.docker.com/r/wiznote/wizserver)
