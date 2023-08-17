@@ -4,7 +4,7 @@ This will install and create containers for the following apps
 - openVPN (Requires configuration once created)
 - LibreSpeed (internal speed test)
 - Pi-Hole with Unbound (ad blocking)
-- Orbital-sync (Pi-hole primary to secondary sync)
+- Orbital-sync (Pi-hole primary to secondary/tertiary sync)
 
 ### Folders
 The following folders should be created

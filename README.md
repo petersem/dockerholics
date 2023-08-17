@@ -313,6 +313,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 - [Handbrake](https://hub.docker.com/r/jlesage/handbrake)
  is a Docker container for HandBrake.
+- [Jellystat](https://hub.docker.com/r/cyfershepard/jellystat)
+ is a free and open source Statistics App for Jellyfin!
 - [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Ombi](https://hub.docker.com/r/linuxserver/ombi)
