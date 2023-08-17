@@ -149,7 +149,7 @@ services:
       - DOMAIN=https://vw.$DOMAIN
       - ROCKET_PORT=8089
       - WEBSOCKET_ENABLED=true
-      - ADMIN_TOKEN=$BW_TOKEN
+      - ADMIN_TOKEN=$VW_TOKEN
       - SMTP_HOST=$GM_SERVER
       - SMTP_FROM=$GM_USER
       - SMTP_PORT=$GM_PORT
