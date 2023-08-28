@@ -201,7 +201,7 @@ services:
     volumes:
       - $DOCKER_PATH/searxng:/etc/searxng:rw
     environment:
-      - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
+      - SEARXNG_BASE_URL=https://sear.$DOMAIN/
     cap_drop:
       - ALL
     cap_add:
