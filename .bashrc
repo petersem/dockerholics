@@ -99,11 +99,6 @@ piu() {
   sudo netstat -plan | grep ":$1"
 }
 
-# Shows 'port in use' details for a supplied port number
-#
-piu() {
-  sudo netstat -plan | grep ":$1"
-}
 
 
 # ENVIRONMENT SETTINGS ##########################################
