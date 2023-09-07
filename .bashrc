@@ -6,6 +6,8 @@
 
 
 ########## Set docker aliases
+#
+
 # basic change folder command
 alias cdkr='cd ~/docker'
 alias cdcd='cd ~/code/dockerholics/compose-examples'
@@ -53,7 +55,16 @@ alias logs='docker logs -f'
 # show host disk use for docker
 alias ddf='docker system df'
 
+# rename a specified container
+alias rename='docker rename'
+
 # FUNCTIONS ####################################################
+#
+
+# run a command inside a given container pas a single command or encapsulate in "" for a command with a parameter
+drun() {
+  docker exec $1
+}
 
 # pulls a image and then creates and starts it
 pullup() {
@@ -94,7 +105,7 @@ piu() {
 
 
 # ENVIRONMENT SETTINGS ##########################################
-#
 # Helps avoid timeouts for large yaml scripts
+
 export DOCKER_CLIENT_TIMEOUT=360
 export COMPOSE_HTTP_TIMEOUT=360
