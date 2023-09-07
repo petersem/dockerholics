@@ -88,7 +88,7 @@ terma() {
 
 # stops and deletes a container
 #
-mdk() {
+std() {
   stop $1
   del $1
 }
