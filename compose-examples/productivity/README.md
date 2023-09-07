@@ -15,6 +15,7 @@ This will install and create containers for the following apps
 - Opengist
 - Glances
 - Linkding
+- Uptimekuma
 
 
 ## Prerequisites
@@ -37,6 +38,7 @@ The following folders should be created
 - {docker}/homepage/icons
 - {docker}/linkding
 - {docker}/opengist
+- {docker}/uptimekuma
  
 > The above folder should be under your `docker` folder.
 

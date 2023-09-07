@@ -238,3 +238,15 @@ services:
       timeout: 5s
       interval: 10s
       retries: 3
+
+# UptimeKuma service monitor
+  uptimekuma:
+    container_name: uptimekuma
+    image: louislam/uptime-kuma
+    restart: unless-stopped
+    ports:
+      - 2001:3001
+    volumes:
+      - $PERSIST/uptimekuma:/app/data
+    dns:
+      - 192.168.1.2
