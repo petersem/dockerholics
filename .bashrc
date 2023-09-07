@@ -63,7 +63,7 @@ alias rename='docker rename'
 # FUNCTIONS ####################################################
 #
 
-# run a command inside a given container pass a single command or encapsulate in "" for a command with a parameter
+# run a command inside a given container. Pass a single command or encapsulate in "" for a command with a parameter
 drun() {
   docker exec $1
 }
