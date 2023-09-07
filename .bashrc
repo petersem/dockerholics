@@ -1,3 +1,4 @@
+# nano ~/.bashrc
 # run 'source ~/.bashrc' to load latest changes in current session
 
 # ALIASES #####################################################
