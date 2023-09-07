@@ -5,7 +5,8 @@
 
 
 # Set docker aliases
-alias cdkr='cd /volume1/docker'
+alias cdkr='cd /home/docker'
+alias cdcd='cd /home/code/dockerholics/compose-examples'
 alias list='docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Status}}" | (read -r; printf "%s\n" "$REPLY"; sort -k 1 )'
 alias down='docker compose down -v'
 alias pull='docker compose pull'
@@ -13,6 +14,8 @@ alias up='docker compose up -d'
 alias inspect='docker inspect'
 alias create='docker compose up --no-start'
 alias stop='docker stop'
+alias stopall='docker stop $(docker ps -a -q)'
+alias startall='docker start $(docker ps -a -q)'
 alias start='docker start'
 alias prune='docker system prune -a --volumes'
 alias del='docker rm'
@@ -22,8 +25,7 @@ alias del='docker rm'
 # Restarts a container
 #
 cycle() {
-  stop $1
-  start $1
+  docker restart $1
 }
 
 # pulls a image and then creates and starts it
