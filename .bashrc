@@ -11,7 +11,9 @@
 # basic change folder command
 alias cdkr='cd ~/docker'
 alias cdcd='cd ~/code/dockerholics/compose-examples'
-alias list='docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Status}}" | (read -r; printf "%s\n" "$REPLY"; sort -k 1 )' # list all containers in a formatted list
+
+# list all containers in a formatted list
+alias list='docker ps -a --format "table {{.Names}}\t{{.ID}}\t{{.Image}}\t{{.Status}}" | (read -r; printf "%s\n" "$REPLY"; sort -k 1 )' 
 
 # stop and remove all containers in your compose file. Optional to add a single container name
 alias down='docker compose down -v'
@@ -61,7 +63,7 @@ alias rename='docker rename'
 # FUNCTIONS ####################################################
 #
 
-# run a command inside a given container pas a single command or encapsulate in "" for a command with a parameter
+# run a command inside a given container pass a single command or encapsulate in "" for a command with a parameter
 drun() {
   docker exec $1
 }
