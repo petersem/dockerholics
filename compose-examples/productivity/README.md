@@ -49,7 +49,7 @@ Review the .env and update
 - PGID
 - Plus other values
 
-### Filebowser initial setup (pre-create of container)
+### Filebrowser initial setup (pre-create of container)
 touch ~/{docker}/filebrowser/filebrowser.db
 touch ~/{docker}/filebrowser/.filebrowser.json
 
