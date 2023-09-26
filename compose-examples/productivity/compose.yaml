@@ -69,7 +69,7 @@ services:
     container_name: filebrowser
     volumes:
       - $MEDIA_PATH:/srv
-      - $DOCKER_PATH/filebrowser/filebrowser.db:/database.db
+      - $DOCKER_PATH/filebrowser/filebrowser.db:/database/filebrowser.db
       - $DOCKER_PATH/filebrowser/.filebrowser.json:/.filebrowser.json
     environment:
       user: "$PUID:$PGID"

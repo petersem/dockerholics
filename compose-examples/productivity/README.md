@@ -48,3 +48,19 @@ Review the .env and update
 - PUID
 - PGID
 - Plus other values
+
+### Filebowser initial setup (pre-create of container)
+touch ~/{docker}/filebrowser/filebrowser.db
+touch ~/{docker}/filebrowser/.filebrowser.json
+
+nano ~/{docker}/filebrowser/.filebrowser.json
+{
+  "port": 80,
+  "baseURL": "",
+  "address": "",
+  "log": "stdout",
+  "database": "/database/filebrowser.db",
+  "root": "/srv"
+}
+
+> initial filebrowser credentials are admin;admin
