@@ -167,8 +167,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
-- [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
- Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ngx.readthedocs.io/en/latest/)
 - [Paperless-ngx](https://hub.docker.com/r/paperlessngx/paperless-ngx)
  Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ngx.readthedocs.io/en/latest/) `Recommended`
 
@@ -409,6 +407,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 - [Photoprism](https://hub.docker.com/r/photoprism/photoprism)
  A server-based application for browsing, organizing and sharing your personal photo collection. (includes face recognition) `Recommended`
+- [Immich](https://immich.app/docs/install/docker-compose/)
+ Self-hosted backup solution for photos and videos on mobile device.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
