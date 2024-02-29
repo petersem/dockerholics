@@ -133,8 +133,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Development
-- [Cloud9](https://hub.docker.com/r/linuxserver/cloud9)
- is a complete web based IDE with terminal access. 
+- [Open-VS-Code-Server](https://github.com/linuxserver/docker-openvscode-server)
+ is Open VS Code running on a remote server, accessible through the browser.
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. `Recommended`
 - [Gitea](https://hub.docker.com/r/gitea/gitea)
