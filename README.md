@@ -409,6 +409,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 - [Photoprism](https://hub.docker.com/r/photoprism/photoprism)
  A server-based application for browsing, organizing and sharing your personal photo collection. (includes face recognition) `Recommended`
+- [Immich](https://immich.app/docs/install/docker-compose/)
+ Self-hosted backup solution for photos and videos on mobile device.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
