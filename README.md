@@ -355,7 +355,7 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is distributed, real-time, performance and health monitoring for systems and applications. `Recommended`
 - [OwntracksRecorder](https://hub.docker.com/r/owntracks/recorder)
  is a lightweight program for storing and accessing location data published via MQTT (or HTTP) by the OwnTracks apps. `Recommended`
-- [Scrutiny](https://hub.docker.com/r/linuxserver/scrutiny)
+- [Scrutiny](https://github.com/AnalogJ/scrutiny)
  is a WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.
 - [SmokePing](https://hub.docker.com/r/linuxserver/smokeping)
  keeps track of your network latency.
