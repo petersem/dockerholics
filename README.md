@@ -220,6 +220,9 @@ This is a list of free applications which can be hosted locally  in Docker conta
  Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
 - [Rickroll](https://hub.docker.com/r/modem7/docker-rickroll)
  is a self-hosted, self-contained Rickroll container
+- [Minecraft Server](https://hub.docker.com/r/itzg/minecraft-server)
+ enables deployment of a minecraft server with automatic version management. It also supports mods and other server customizations. [Docs](https://github.com/itzg/docker-minecraft-server#readme) 
+
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
