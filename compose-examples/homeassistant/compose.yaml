@@ -63,7 +63,7 @@ services:
       retries: 3
 
   homeassistantdb:
-    image: linuxserver/mariadb:alpine
+    image: linuxserver/mariadb
     container_name: homeassistantdb
     environment:
       - PUID=$PUID

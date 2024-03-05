@@ -3,11 +3,14 @@ Join our community [here](https://www.facebook.com/groups/205764024543769)
 
 # Docker Compose [Examples](https://github.com/petersem/dockerholics/tree/main/compose-examples)
 Use these to kick-start your installs. 
+- [Books](https://github.com/petersem/dockerholics/tree/main/compose-examples/books)
 - [Docker](https://github.com/petersem/dockerholics/tree/main/compose-examples/docker)
 - [Download](https://github.com/petersem/dockerholics/tree/main/compose-examples/download)
+- [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
 - [Networking](https://github.com/petersem/dockerholics/tree/main/compose-examples/network)
 - [Plex](https://github.com/petersem/dockerholics/tree/main/compose-examples/plex)
-- [Home Assistant](https://github.com/petersem/dockerholics/tree/main/compose-examples/homeassistant)
+- [Productivity](https://github.com/petersem/dockerholics/tree/main/compose-examples/productivity)
+
 - [Linux Aliases](https://raw.githubusercontent.com/petersem/dockerholics/main/.bashrc)
 
 # Dockerholics Application List
@@ -25,8 +28,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Document Management](#document-management)
   - [Downloading and Searching](#downloading-and-searching)
   - [E-books](#e-books)
+  - [Entertainment](#entertainment)
   - [Finance](#finance)
-  - [Gaming](#gaming)
   - [Information Sharing](#information-sharing)
   - [Internet](#internet)
   - [Link Organisation](#link-organisation)
@@ -70,8 +73,12 @@ This is a list of free applications which can be hosted locally  in Docker conta
  provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. `Recommended`
 - [HasteBin](https://hub.docker.com/r/rlister/hastebin)
  is a simple pastebin, which can be installed on a protected network `Recommended`
+- [Hastypaste](https://github.com/enchant97/hasty-paste)
+ is a fast and minimal paste bin, written in Python using Quart. `Recommended` 
 - [NextCloud](https://hub.docker.com/_/nextcloud)
  is a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms. `Recommended`
+- [Picoshare](https://github.com/mtlynch/picoshare)
+ is a minimalist service that allows you to share files, or simple text pastes, easily.  `Recommended`
 - [PrivateBin](https://hub.docker.com/r/privatebin/nginx-fpm-alpine)
  is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES.
 - [SyncThing](https://hub.docker.com/r/linuxserver/syncthing)
@@ -94,6 +101,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
  is an Open Source proofreading software for English, French, German, Polish, Russian, and more than 20 other languages.
 - [Limesurvey](https://hub.docker.com/r/acspri/limesurvey)
  is a free and open source on-line statistical survey web app.
+- [Opengist](https://github.com/thomiceli/opengist#with-docker)
+ is a self-hosted pastebin powered by Git.
 - [Strapi](https://hub.docker.com/r/strapi/strapi)
  is the leading open-source headless CMS.
 - [Wiznote](https://hub.docker.com/r/wiznote/wizserver)
@@ -124,8 +133,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Development
-- [Cloud9](https://hub.docker.com/r/linuxserver/cloud9)
- is a complete web based IDE with terminal access. 
+- [Open-VS-Code-Server](https://github.com/linuxserver/docker-openvscode-server)
+ is Open VS Code running on a remote server, accessible through the browser.
 - [Code-Server](https://hub.docker.com/r/linuxserver/code-server)
  is VS Code running on a remote server, accessible through the browser. `Recommended`
 - [Gitea](https://hub.docker.com/r/gitea/gitea)
@@ -158,8 +167,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 ## Document Management
 - [PaperMerge](https://hub.docker.com/r/linuxserver/papermerge)
  is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. `Recommended`
-- [Paperless-ng](https://hub.docker.com/r/jonaswinkler/paperless-ng)
- Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ngx.readthedocs.io/en/latest/)
 - [Paperless-ngx](https://hub.docker.com/r/paperlessngx/paperless-ngx)
  Open Source document management system, including OCR, import from specific folder, E-Mail attachement import, full text search, machine learning powered document matching and much more. Archive your documents easily and store them in your private cloud. [Docs](https://paperless-ngx.readthedocs.io/en/latest/) `Recommended`
 
@@ -195,12 +202,27 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## E-books
+- [Audiobookshelf](https://www.audiobookshelf.org/)
+ is a self-hosted audiobook and podcast server
 - [Calibre](https://hub.docker.com/r/linuxserver/calibre)
- is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software.
+ is a powerful and easy to use e-book manager. Users say it’s outstanding and a must-have. It’ll allow you to do nearly everything and it takes things a step beyond normal e-book software. `Recommended`
 - [Calibre-Web](https://hub.docker.com/r/linuxserver/calibre-web)
  is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. `Recommended`
 - [Cops](https://hub.docker.com/r/linuxserver/cops)
  links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. `Recommended` 
+
+**[`^        back to top        ^`](#dockerholics-application-list)**
+
+## Entertainment
+- [OpenRA](https://hub.docker.com/r/rmoriz/openra)
+ is a multi-player network client for the OpenRA game
+- [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
+ Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
+- [Rickroll](https://hub.docker.com/r/modem7/docker-rickroll)
+ is a self-hosted, self-contained Rickroll container
+- [Minecraft Server](https://hub.docker.com/r/itzg/minecraft-server)
+ enables deployment of a minecraft server with automatic version management. It also supports mods and other server customizations. [Docs](https://github.com/itzg/docker-minecraft-server#readme) 
+
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -213,16 +235,6 @@ This is a list of free applications which can be hosted locally  in Docker conta
 is a self hosted vehicle management system to track fuel and other expenses related to all of your vehicles. It supports multiple users sharing multiple vehicles.
 - [Openbudgeteer](https://hub.docker.com/r/axelander/openbudgeteer)
 is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB and Buckets. 
-
-**[`^        back to top        ^`](#dockerholics-application-list)**
-
-## Gaming
-- [OpenRA](https://hub.docker.com/r/rmoriz/openra)
- is a multi-player network client for the OpenRA game
-- [Mario](https://hub.docker.com/r/pengbai/docker-supermario)
- Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements
-- [Minecraft Server](https://hub.docker.com/r/itzg/minecraft-server)
- is a docker image that can run a minecraft server which automatically runs the selected version. It also supports mods and other server customizations. [Docs](https://github.com/itzg/docker-minecraft-server#readme) 
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -239,6 +251,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a web IRC client that you host on your own server.
 - [NginX](https://hub.docker.com/_/nginx)
  is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server.
+- [Searxng](https://github.com/searxng/searxng-docker)
+ is a privacy-respecting, hackable metasearch engine `Recommended`
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
  
@@ -247,12 +261,19 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is another web application bookmark dashboard, with fun features.
 - [Flame](https://github.com/pawelmalak/flame)
  Flame is self-hosted startpage for your server.
+- [Homepage](https://github.com/benphelps/homepage)
+ is self-hosted startpage for your server. `Recommended`
 - [Heimdall](https://hub.docker.com/r/linuxserver/heimdall)
  is a way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall.
+- [Homarr](https://github.com/ajnart/homarr)
+ is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
 - [Homer](https://hub.docker.com/r/b4bz/homer)
  is a dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
+- [Linkding](https://hub.docker.com/r/sissbruecker/linkding)
+ is a simple bookmark service that you can host yourself
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
+
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
@@ -293,12 +314,16 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  allows you to share your Radarr lists with others, without having to give them your Radarr API key.
 - [Handbrake](https://hub.docker.com/r/jlesage/handbrake)
  is a Docker container for HandBrake.
+- [Jellystat](https://hub.docker.com/r/cyfershepard/jellystat)
+ is a free and open source Statistics App for Jellyfin!
 - [MovieMatch](https://hub.docker.com/r/lukechannings/moviematch)
  Have you ever spent longer deciding on a movie than it'd take to just watch a random movie? This is an app that helps you and your friends pick a movie to watch from a Plex server.
 - [Ombi](https://hub.docker.com/r/linuxserver/ombi)
  allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface!
 - [Overseerr](https://hub.docker.com/r/sctx/overseerr)
  is a free and open source software application for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Plex! `Recommended`
+- [Plex-Meta-Manager](https://github.com/meisnate12/Plex-Meta-Manager)
+ eases the creation and maintenance of metadata, collections, and playlists within a Plex Media Server
 - [Posterr](https://hub.docker.com/r/petersem/posterr)
  is a media poster display for Plex, Sonarr, and Radarr
 - [Reqestrr](https://hub.docker.com/r/linuxserver/requestrr)
@@ -319,6 +344,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  tracks your baby's schedule and routine.
 - [ChangeDetection](https://hub.docker.com/r/dgtlmoon/changedetection.io)
  lets you know when web pages change! Stay on top of new information!
+- [Frigate](https://hub.docker.com/r/blakeblackshear/frigate)
+ is an NVR With Realtime Object Detection for IP Cameras
 - [Glances](https://hub.docker.com/r/nicolargo/glances)
  is a cross-platform monitoring tool which aims to present a maximum of information in a minimum of space.
 - [Grafana](https://hub.docker.com/r/grafana/grafana)
@@ -353,6 +380,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt. `Recommended`
 - [OpenVPN Client](https://hub.docker.com/r/dperson/openvpn-client)
  is an OpenVPN client docker container. It makes routing containers' traffic through OpenVPN easy. `Recommended`
+- [Orbital-sync](https://github.com/mattwebbio/orbital-sync)
+ synchronizes multiple Pi-hole instances for high availability (HA) using the built-in "teleporter". `Recommended`
 - [Pi-hole Unbound](https://hub.docker.com/r/cbcrowe/pihole-unbound)
  uses Docker to run Pi-Hole with an upstream Unbound resolver `Recommended`
 - [Privoxy](https://hub.docker.com/r/vimagick/privoxy)
@@ -381,6 +410,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures. `Recommended`
 - [Photoprism](https://hub.docker.com/r/photoprism/photoprism)
  A server-based application for browsing, organizing and sharing your personal photo collection. (includes face recognition) `Recommended`
+- [Immich](https://immich.app/docs/install/docker-compose/)
+ Self-hosted backup solution for photos and videos on mobile device.
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 

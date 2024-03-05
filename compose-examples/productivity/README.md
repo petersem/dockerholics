@@ -1,14 +1,10 @@
 # Productivity - app stack
->  
-> THIS STACK NOT IMPLEMENTED YET!!
->  
 
 This will install and create containers for the following apps
-- Hastebin
 - Hasty Paste
 - Paperless NGX
 - Joplin
-- Flame
+- Homepage
 - Languagetool
 - WhiteBoardOnline
 - Filebrowser
@@ -16,6 +12,10 @@ This will install and create containers for the following apps
 - DrawIO
 - VaultWarden
 - Syncthing
+- Opengist
+- Glances
+- Linkding
+- Uptimekuma
 
 
 ## Prerequisites
@@ -33,8 +33,13 @@ The following folders should be created
 - {docker}/filebrowser
 - {docker}/wbo
 - {docker}/languagetool
-- {docker}/flame
-- 
+- {docker}/homepage
+- {docker}/homepage/images
+- {docker}/homepage/icons
+- {docker}/linkding
+- {docker}/opengist
+- {docker}/uptimekuma
+ 
 > The above folder should be under your `docker` folder.
 
 ### Changes to .env file
@@ -43,3 +48,19 @@ Review the .env and update
 - PUID
 - PGID
 - Plus other values
+
+### Filebrowser initial setup (pre-create of container)
+touch ~/{docker}/filebrowser/filebrowser.db
+touch ~/{docker}/filebrowser/.filebrowser.json
+
+nano ~/{docker}/filebrowser/.filebrowser.json
+{
+  "port": 80,
+  "baseURL": "",
+  "address": "",
+  "log": "stdout",
+  "database": "/database/filebrowser.db",
+  "root": "/srv"
+}
+
+> initial filebrowser credentials are admin;admin

@@ -1,4 +1,59 @@
 services:
+  # Opengist 
+  opengist:
+    image: ghcr.io/thomiceli/opengist:1
+    container_name: opengist
+    restart: unless-stopped
+    ports:
+      - "6157:6157" # HTTP port
+      - "2222:2222" # SSH port, can be removed if you don't use SSH
+    volumes:
+      - $DOCKER_PATH/opengist:/opengist
+    environment:
+      CONFIG: |
+        log-level: info
+        ssh.git-enabled: false
+        disable-signup: false # You may wish to change this to true after you sign up the first time. 
+
+  # Glances - system monitoring
+  glances:
+    container_name: glances
+    ports:
+      - 61208-61209:61208-61209
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - GLANCES_OPT=-w
+    restart: always
+    pid: host
+    image: nicolargo/glances
+
+  # Homepage dashboard
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3344:3000
+    volumes:
+      - $DOCKER_PATH/homepage:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations, see alternative methods
+      - $DOCKER_PATH/homepage/images:/app/public/images
+      - $DOCKER_PATH/homepage/icons:/app/public/icons
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+    restart: unless-stopped
+
+  # link manager
+  linkding:
+    image: sissbruecker/linkding
+    container_name: linkding
+    ports:
+      - 9999:9090
+    volumes:
+      - $DOCKER_PATH/linkding:/etc/linkding/data
+    restart: unless-stopped
+
   # White Board Online
   wbo:
     image: lovasoa/wbo
@@ -14,7 +69,7 @@ services:
     container_name: filebrowser
     volumes:
       - $MEDIA_PATH:/srv
-      - $DOCKER_PATH/filebrowser/filebrowser.db:/database.db
+      - $DOCKER_PATH/filebrowser/filebrowser.db:/database/filebrowser.db
       - $DOCKER_PATH/filebrowser/.filebrowser.json:/.filebrowser.json
     environment:
       user: "$PUID:$PGID"
@@ -91,16 +146,16 @@ services:
       - INVITATIONS_ALLOWED=true
       - LOG_LEVEL=warn
       - EXTENDED_LOGGING=true
-      - DOMAIN=https://bw.$DOMAINNAME
+      - DOMAIN=https://vw.$DOMAIN
       - ROCKET_PORT=8089
       - WEBSOCKET_ENABLED=true
-      - ADMIN_TOKEN=$BW_TOKEN__SECRET
+      - ADMIN_TOKEN=$VW_TOKEN
       - SMTP_HOST=$GM_SERVER
-      - SMTP_FROM=$GM_USER__SECRET
+      - SMTP_FROM=$GM_USER
       - SMTP_PORT=$GM_PORT
       - SMTP_SSL=true
-      - SMTP_USERNAME=$GM_USER__SECRET
-      - SMTP_PASSWORD=$GM_PSW__SECRET
+      - SMTP_USERNAME=$GM_USER
+      - SMTP_PASSWORD=$GM_PSW
 
   # Syncthing
   syncthing: 
@@ -121,50 +176,15 @@ services:
     image: linuxserver/syncthing
     restart: unless-stopped
 
-  # Hastebin Redis Cache
-  hastebin:
-    container_name: hastebin
-    image: rlister/hastebin
-    environment:
-      STORAGE_TYPE: redis
-      STORAGE_HOST: hastebinredis
-    ports:
-     - 7777:7777
-    restart: unless-stopped
-    depends_on:
-      hastebinredis: 
-        condition: service_healthy
-    labels: 
-      autoheal: true
-    healthcheck:
-      test: wget -s http://127.0.0.1:7777 || exit 1
-      start_period: 10s
-      timeout: 5s
-      interval: 5s
-      retries: 3
-
-  # Hastebin Redis Cache
-  hastebinredis:
-    container_name: hastebinredis
-    image: redis
-    volumes:
-      - $DOCKER_PATH/hastebinredis:/data
-    entrypoint: redis-server --appendonly yes
-    labels: 
-      autoheal: true
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli","ping"]
-      start_period: 10s
-      timeout: 5s
-      interval: 5s
-      retries: 3
-
-  # hasy paste
+  # hasty paste
   hastypaste:
     container_name: hastypaste
     image: ghcr.io/enchant97/hasty-paste:1
     restart: unless-stopped
+    environment:
+      NEW_AT_INDEX: "true"
+      DEFAULT_USE_LONG_ID: "false"
+      ENABLE_PUBLIC_LIST: "true"
     volumes:
       - $DOCKER_PATH/hastypaste:/app/data
     ports:
@@ -181,7 +201,7 @@ services:
     volumes:
       - $DOCKER_PATH/searxng:/etc/searxng:rw
     environment:
-      - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
+      - SEARXNG_BASE_URL=https://sear.$DOMAIN/
     cap_drop:
       - ALL
     cap_add:
@@ -194,3 +214,39 @@ services:
       options:
         max-size: "1m"
         max-file: "1"
+
+  # Languagetool - self-host spell checker
+  languagetool:
+    image: erikvl87/languagetool
+    container_name: languagetool
+    ports:
+        - 8018:8010  # Using default port from the image
+    labels:
+      autoheal: 'true'
+    networks:
+      - external
+    environment:
+        - langtool_languageModel=/ngrams  # OPTIONAL: Using ngrams data
+        - Java_Xms=256m  # OPTIONAL: Setting a minimal Java heap size of 512 mib
+        - Java_Xmx=512m  # OPTIONAL: Setting a maximum Java heap size of 1 Gib
+    volumes:
+        - $DOCKER_PATH/languagetool:/ngrams
+    restart: unless-stopped
+    healthcheck:
+      test: curl -d "text=Color atomize" -d "language=en-AU" http://localhost:8010/v2/check > /dev/null || exit 1
+      start_period: 25s
+      timeout: 5s
+      interval: 10s
+      retries: 3
+
+# UptimeKuma service monitor
+  uptimekuma:
+    container_name: uptimekuma
+    image: louislam/uptime-kuma
+    restart: unless-stopped
+    ports:
+      - 2001:3001
+    volumes:
+      - $PERSIST/uptimekuma:/app/data
+    dns:
+      - 192.168.1.2

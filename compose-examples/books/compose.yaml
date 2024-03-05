@@ -1,0 +1,67 @@
+services:
+  audiobookshelf:
+    container_name: audiobookshelf
+    image: ghcr.io/advplyr/audiobookshelf:latest
+    environment:
+      - AUDIOBOOKSHELF_UID=$PUID
+      - AUDIOBOOKSHELF_GID=$PGID
+    ports:
+      - 13378:80
+    volumes:
+      - $MEDIA_PATH/audiobooks:/audiobooks
+      - $DOCKER_PATH//audiobookshelf/config:/config
+      - $DOCKER_PATH//audiobookshelf/metadata:/metadata
+    restart: unless-stopped
+
+  calibre-web:
+    image: linuxserver/calibre-web
+    container_name: calibre-web
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - TZ=$TIME_ZONE
+      - DOCKER_MODS=linuxserver/calibre-web:calibre
+    volumes:
+      - $DOCKER_PATH//calibre-web/config:/config
+      - $MEDIA_PATH/ebooks:/books:rw
+    ports:
+      - 8083:8083
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8083 || exit 1
+      start_period: 500s
+      timeout: 10s
+      interval: 30s
+      retries: 3
+    depends_on: 
+      calibre:
+        condition: service_healthy
+    restart: unless-stopped
+    labels: 
+      autoheal: 'true'
+
+  calibre:
+    image: linuxserver/calibre
+    container_name: calibre
+    environment:
+      - PUID=$PUID
+      - PGID=$PGID
+      - KEEP_APP_RUNNING=1
+      - TZ=$TIME_ZONE
+      - DISABLE_AUTH='true'
+      - CALIBRE_USE_DARK_PALETTE=1
+    volumes:
+      - $DOCKER_PATH//calibre/config:/config
+      - $MEDIA_PATH/ebooks:/books:rw
+      - $DOWNLOADS:/downloads:rw
+    ports:
+      - 7080:8080
+      - 7081:8081
+    labels: 
+      autoheal: 'true'
+    healthcheck:
+      test: curl -fSs http://127.0.0.1:8080 || exit 1
+      start_period: 360s
+      timeout: 10s
+      interval: 15s
+      retries: 3
+    restart: unless-stopped

@@ -8,6 +8,7 @@ services:
     environment:
       - AUTOHEAL_CONTAINER_LABEL=all
       - TZ=$TZ
+      - WATCHTOWER_WARN_ON_HEAD_FAILURE=never
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
     image: willfarrell/autoheal
@@ -45,6 +46,8 @@ services:
       WATCHTOWER_POLL_INTERVAL: $WT_INTERVAL
       WATCHTOWER_TIMEOUT: 15
       WATCHTOWER_NOTIFICATIONS_LEVEL: info
+      WATCHTOWER_HTTP_API_METRICS: "true"
+      WATCHTOWER_HTTP_API_TOKEN: $WATCHTOWER_API_TOKEN
       WATCHTOWER_NOTIFICATIONS: shoutrrr
       # Using Pushbullet, telegram and pushover as examples, but just pick one
       # WATCHTOWER_NOTIFICATION_URL: "pushover://shoutrrr:$PUSHOVER_APP_API__SECRET@$PUSHOVER_USER_API__SECRET/?devices=$PUSHOVER_DEVICE telegram://$TELEGRAM_BOT_TOKEN__SECRET@telegram?channels=$TELEGRAM_CHAT_ID__SECRET pushbullet://$PUSHBULLET_API__SECRET"

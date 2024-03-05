@@ -6,8 +6,8 @@ services:
     environment:
       TZ: $TZ
     volumes:
-      - $DOCKER_PATH/posterr/randomthemes:/usr/src/app/public/randomthemes
-      - $DOCKER_PATH/posterr/config:/usr/src/app/config
+      - $PERSIST/posterr/config:/usr/src/app/config
+      - $PERSIST/posterr/custom:/usr/src/app/public/custom
     ports:
       - 9876:3000
     restart: always
