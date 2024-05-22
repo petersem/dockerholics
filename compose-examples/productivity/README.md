@@ -53,7 +53,8 @@ Review the .env and update
 - Plus other values
 
 ### Filebrowser initial setup (pre-create of container)
-```touch ~/{docker}/filebrowser/filebrowser.db
+```
+touch ~/{docker}/filebrowser/filebrowser.db
 touch ~/{docker}/filebrowser/.filebrowser.json
 
 nano ~/{docker}/filebrowser/.filebrowser.json
@@ -64,15 +65,18 @@ nano ~/{docker}/filebrowser/.filebrowser.json
   "log": "stdout",
   "database": "/database/filebrowser.db",
   "root": "/srv"
-}```
+}
+```
 
 > initial filebrowser credentials are admin;admin
 
 ### Ntfy initial setup (post-creation of container)
-```docker exec -it ntfy sh
+```
+docker exec -it ntfy sh
 ntfy user add --role=admin _your-admin-username_
 <enter a new password>
-exit```
+exit
+```
 
 > Use these creditials to logon to Ntfy
 
