@@ -15,6 +15,7 @@ This will install and create containers for the following apps
 - Opengist
 - Glances
 - Linkding
+- Ntfy
 - Uptimekuma
 
 
@@ -37,6 +38,8 @@ The following folders should be created
 - {docker}/homepage/images
 - {docker}/homepage/icons
 - {docker}/linkding
+- {docker}/ntfy
+- {docker}/ntfy/cache
 - {docker}/opengist
 - {docker}/uptimekuma
  
@@ -50,7 +53,7 @@ Review the .env and update
 - Plus other values
 
 ### Filebrowser initial setup (pre-create of container)
-touch ~/{docker}/filebrowser/filebrowser.db
+```touch ~/{docker}/filebrowser/filebrowser.db
 touch ~/{docker}/filebrowser/.filebrowser.json
 
 nano ~/{docker}/filebrowser/.filebrowser.json
@@ -61,6 +64,15 @@ nano ~/{docker}/filebrowser/.filebrowser.json
   "log": "stdout",
   "database": "/database/filebrowser.db",
   "root": "/srv"
-}
+}```
 
 > initial filebrowser credentials are admin;admin
+
+### Ntfy initial setup (post-creation of container)
+```docker exec -it ntfy sh
+ntfy user add --role=admin _your-admin-username_
+<enter a new password>
+exit```
+
+> Use these creditials to logon to Ntfy
+
