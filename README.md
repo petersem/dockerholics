@@ -18,6 +18,10 @@ This is a list of free applications which can be hosted locally  in Docker conta
 > See [Contributing](#Contributing) for ways that you can add to this list.
 
 ## Categories
+- [Dockerholics](#dockerholics)
+- [Docker Compose Examples](#docker-compose-examples)
+- [Dockerholics Application List](#dockerholics-application-list)
+  - [Categories](#categories)
   - [Backup](#backup)
   - [Business](#business)
   - [Collaboration and Synchronisation](#collaboration-and-synchronisation)
@@ -36,6 +40,7 @@ This is a list of free applications which can be hosted locally  in Docker conta
   - [Media Servers](#media-servers)
   - [Media Management](#media-management)
   - [Media Utilities](#media-utilities)
+  - [Messaging Tools](#messaging-tools)
   - [Monitoring and Management](#monitoring-and-management)
   - [Networking and Security](#networking-and-security)
   - [Photos](#photos)
@@ -336,6 +341,14 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  emulates a SiliconDust HDHomeRun OTA tuner, which allows it to expose IPTV style channels to software, which would not normally support it.
 - [Varken](https://hub.docker.com/r/boerderij/varken)
  is a standalone command-line utility to aggregate data from the Plex ecosystem into InfluxDB 
+
+**[`^        back to top        ^`](#dockerholics-application-list)**
+
+## Messaging Tools
+- [Gotify](https://hub.docker.com/r/gotify/server)
+ a simple server for sending and receiving messages
+- [NTFY](https://hub.docker.com/r/binwiederhier/ntfy)
+ Send push notifications to your phone or desktop via PUT/POST
 
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
