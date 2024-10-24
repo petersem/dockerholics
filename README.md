@@ -276,6 +276,8 @@ is a budgeting app based on the Bucket Budgeting Principle and inspired by YNAB 
  is a dead simple static HOMe for your servER to keep your services on hand from a simple yaml config. `Recommended`
 - [Linkding](https://hub.docker.com/r/sissbruecker/linkding)
  is a simple bookmark service that you can host yourself
+- [Linkwarden](https://github.com/linkwarden/linkwarden)
+ is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages.
 - [Organizr](https://hub.docker.com/r/organizr/organizr)
  aims to be your one stop shop for your Servers Frontend.
 

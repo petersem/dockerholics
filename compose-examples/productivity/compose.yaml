@@ -134,7 +134,7 @@ services:
   # Mealie
   mealie:
     container_name: mealie
-    image: hkotel/mealie:latest
+    image: ghcr.io/mealie-recipes/mealie:latest
     restart: unless-stopped
     ports:
       - 9925:80
@@ -272,3 +272,32 @@ services:
       - $PERSIST/uptimekuma:/app/data
     dns:
       - 192.168.1.2
+
+
+  linkwardendb:
+    image: postgres:16-alpine
+    container_name: linkwardendb
+    env_file: .env
+    volumes:
+      - $DOCKER_PATH/linkwardendb:/var/lib/postgresql/data
+#    ports:
+#      - 5532:5432
+    restart: unless-stopped
+
+  linkwarden:
+    container_name: linkwarden
+    env_file: .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@linkwardendb:5432/postgres
+      - NEXT_PUBLIC_DISABLE_REGISTRATION=true
+      - NEXTAUTH_URL=https://lw.$DOMAIN
+      - NEXTAUTH_URL_INTERNAL=https://lw.$DOMAIN
+      - NEXTAUTH_SECRET=$NEXTAUTH_SECRET
+    image: ghcr.io/linkwarden/linkwarden:latest
+    ports:
+      - 3111:3000
+    volumes:
+      - $DOCKER_PATH/linkwarden:/data/data
+    depends_on:
+      - linkwardendb
+    restart: unless-stopped
