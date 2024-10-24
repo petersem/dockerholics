@@ -17,6 +17,7 @@ This will install and create containers for the following apps
 - Linkding
 - Ntfy
 - Uptimekuma
+- Linkwarden
 
 
 ## Prerequisites
@@ -24,24 +25,26 @@ The following folders should be created
 - docker
 > - /c/docker (on windows)
 > - ~/docker (on linux)
-- {docker}/hastebinredis
-- {docker}/hastypaste
-- {docker}/vaultwarden
-- {docker}/vaultwarden/data
-- {docker}/vaultwarden/ssl
-- {docker}/mealie
-- {docker}/joplindb
-- {docker}/filebrowser
-- {docker}/wbo
-- {docker}/languagetool
-- {docker}/homepage
-- {docker}/homepage/images
-- {docker}/homepage/icons
-- {docker}/linkding
-- {docker}/ntfy
-- {docker}/ntfy/cache
-- {docker}/opengist
-- {docker}/uptimekuma
+- ~/docker/hastebinredis
+- ~/docker/hastypaste
+- ~/docker/vaultwarden
+- ~/docker/vaultwarden/data
+- ~/docker/vaultwarden/ssl
+- ~/docker/mealie
+- ~/docker/joplindb
+- ~/docker/filebrowser
+- ~/docker/wbo
+- ~/docker/languagetool
+- ~/docker/homepage
+- ~/docker/homepage/images
+- ~/docker/homepage/icons
+- ~/docker/linkding
+- ~/docker/ntfy
+- ~/docker/ntfy/cache
+- ~/docker/opengist
+- ~/docker/uptimekuma
+- ~/docker/linkwarden
+- ~/docker/linkwardendb
  
 > The above folder should be under your `docker` folder.
 
@@ -54,10 +57,10 @@ Review the .env and update
 
 ### Filebrowser initial setup (pre-create of container)
 ```
-touch ~/{docker}/filebrowser/filebrowser.db
-touch ~/{docker}/filebrowser/.filebrowser.json
+touch ~/~/docker/filebrowser/filebrowser.db
+touch ~/~/docker/filebrowser/.filebrowser.json
 
-nano ~/{docker}/filebrowser/.filebrowser.json
+nano ~/~/docker/filebrowser/.filebrowser.json
 {
   "port": 80,
   "baseURL": "",
