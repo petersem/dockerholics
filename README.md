@@ -232,6 +232,8 @@ This is a list of free applications which can be hosted locally  in Docker conta
 **[`^        back to top        ^`](#dockerholics-application-list)**
 
 ## Finance
+- [Actual Budget](https://hub.docker.com/r/actualbudget/actual-server)
+ is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.
 - [BudgetZero](https://hub.docker.com/r/budgetzero/budgetzero)
  budgetzero is a free, open-source, privacy-friendly, offline-first budgeting system. `Recommended` 
 - [Firefly III](https://hub.docker.com/r/fireflyiii/core)
