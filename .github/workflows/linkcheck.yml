@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: docker://dkhamsing/awesome_bot:latest
       with:
         args: /github/workspace/README.md --allow-redirect --white-list https://www.facebook.com/groups/205764024543769
